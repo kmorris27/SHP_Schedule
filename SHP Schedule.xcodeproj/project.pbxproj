@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE10EBAA1F0D7E99009C3326 /* DayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE10EBA91F0D7E99009C3326 /* DayTableViewController.swift */; };
+		BE134E4D1F133B1600C1E237 /* MonthCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE134E4C1F133B1600C1E237 /* MonthCollectionViewController.swift */; };
+		BE134E4F1F133CEF00C1E237 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE134E4E1F133CEF00C1E237 /* MonthCollectionViewCell.swift */; };
+		BE15A1461F187306002E4D79 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE15A1451F187306002E4D79 /* Extensions.swift */; };
+		BE3D335A1F18726300F6D943 /* UpdateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3D33591F18726300F6D943 /* UpdateTableViewCell.swift */; };
+		BE77CF4A1F1802B600A4A56F /* WeekCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77CF491F1802B600A4A56F /* WeekCollectionViewController.swift */; };
+		BE77CF4C1F1802F600A4A56F /* WeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77CF4B1F1802F600A4A56F /* WeekCollectionViewCell.swift */; };
+		BEB3BE411F0DF79E0069BA82 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3BE401F0DF79E0069BA82 /* SettingsTableViewController.swift */; };
+		BEB3BE431F0DFA220069BA82 /* PeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3BE421F0DFA220069BA82 /* PeriodTableViewCell.swift */; };
+		BEF4976C1F042BF40037F239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF4976B1F042BF40037F239 /* AppDelegate.swift */; };
+		BEF497711F042BF40037F239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF4976F1F042BF40037F239 /* Main.storyboard */; };
+		BEF497731F042BF40037F239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF497721F042BF40037F239 /* Assets.xcassets */; };
+		BEF497761F042BF40037F239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF497741F042BF40037F239 /* LaunchScreen.storyboard */; };
+		BEF4977F1F042C3C0037F239 /* SchoolSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF4977E1F042C3C0037F239 /* SchoolSchedule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE10EBA91F0D7E99009C3326 /* DayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTableViewController.swift; sourceTree = "<group>"; };
+		BE134E4C1F133B1600C1E237 /* MonthCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewController.swift; sourceTree = "<group>"; };
+		BE134E4E1F133CEF00C1E237 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE15A1451F187306002E4D79 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BE3D33591F18726300F6D943 /* UpdateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateTableViewCell.swift; sourceTree = "<group>"; };
+		BE77CF491F1802B600A4A56F /* WeekCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewController.swift; sourceTree = "<group>"; };
+		BE77CF4B1F1802F600A4A56F /* WeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewCell.swift; sourceTree = "<group>"; };
+		BEB3BE401F0DF79E0069BA82 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		BEB3BE421F0DFA220069BA82 /* PeriodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodTableViewCell.swift; sourceTree = "<group>"; };
+		BEF497681F042BF40037F239 /* SHP Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHP Schedule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF4976B1F042BF40037F239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEF497701F042BF40037F239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEF497721F042BF40037F239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEF497751F042BF40037F239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEF497771F042BF40037F239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF4977E1F042C3C0037F239 /* SchoolSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolSchedule.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF497651F042BF40037F239 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEF4975F1F042BF40037F239 = {
+			isa = PBXGroup;
+			children = (
+				BEF4976A1F042BF40037F239 /* SHP Schedule */,
+				BEF497691F042BF40037F239 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEF497691F042BF40037F239 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF497681F042BF40037F239 /* SHP Schedule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF4976A1F042BF40037F239 /* SHP Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				BEF4976F1F042BF40037F239 /* Main.storyboard */,
+				BEF4977E1F042C3C0037F239 /* SchoolSchedule.swift */,
+				BE10EBA91F0D7E99009C3326 /* DayTableViewController.swift */,
+				BE134E4C1F133B1600C1E237 /* MonthCollectionViewController.swift */,
+				BE134E4E1F133CEF00C1E237 /* MonthCollectionViewCell.swift */,
+				BE77CF4B1F1802F600A4A56F /* WeekCollectionViewCell.swift */,
+				BE77CF491F1802B600A4A56F /* WeekCollectionViewController.swift */,
+				BEB3BE401F0DF79E0069BA82 /* SettingsTableViewController.swift */,
+				BEB3BE421F0DFA220069BA82 /* PeriodTableViewCell.swift */,
+				BE3D33591F18726300F6D943 /* UpdateTableViewCell.swift */,
+				BE15A1451F187306002E4D79 /* Extensions.swift */,
+				BEF4977D1F042C100037F239 /* Supporting Files */,
+			);
+			path = "SHP Schedule";
+			sourceTree = "<group>";
+		};
+		BEF4977D1F042C100037F239 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF4976B1F042BF40037F239 /* AppDelegate.swift */,
+				BEF497721F042BF40037F239 /* Assets.xcassets */,
+				BEF497741F042BF40037F239 /* LaunchScreen.storyboard */,
+				BEF497771F042BF40037F239 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEF497671F042BF40037F239 /* SHP Schedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF4977A1F042BF40037F239 /* Build configuration list for PBXNativeTarget "SHP Schedule" */;
+			buildPhases = (
+				BEF497641F042BF40037F239 /* Sources */,
+				BEF497651F042BF40037F239 /* Frameworks */,
+				BEF497661F042BF40037F239 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SHP Schedule";
+			productName = "SHP Schedule";
+			productReference = BEF497681F042BF40037F239 /* SHP Schedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEF497601F042BF40037F239 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Kevin Morris";
+				TargetAttributes = {
+					BEF497671F042BF40037F239 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZVKM27U5E4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BEF497631F042BF40037F239 /* Build configuration list for PBXProject "SHP Schedule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEF4975F1F042BF40037F239;
+			productRefGroup = BEF497691F042BF40037F239 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF497671F042BF40037F239 /* SHP Schedule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEF497661F042BF40037F239 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF497761F042BF40037F239 /* LaunchScreen.storyboard in Resources */,
+				BEF497731F042BF40037F239 /* Assets.xcassets in Resources */,
+				BEF497711F042BF40037F239 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF497641F042BF40037F239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE3D335A1F18726300F6D943 /* UpdateTableViewCell.swift in Sources */,
+				BE134E4F1F133CEF00C1E237 /* MonthCollectionViewCell.swift in Sources */,
+				BEF4977F1F042C3C0037F239 /* SchoolSchedule.swift in Sources */,
+				BE77CF4A1F1802B600A4A56F /* WeekCollectionViewController.swift in Sources */,
+				BE77CF4C1F1802F600A4A56F /* WeekCollectionViewCell.swift in Sources */,
+				BEB3BE411F0DF79E0069BA82 /* SettingsTableViewController.swift in Sources */,
+				BEF4976C1F042BF40037F239 /* AppDelegate.swift in Sources */,
+				BEB3BE431F0DFA220069BA82 /* PeriodTableViewCell.swift in Sources */,
+				BE10EBAA1F0D7E99009C3326 /* DayTableViewController.swift in Sources */,
+				BE15A1461F187306002E4D79 /* Extensions.swift in Sources */,
+				BE134E4D1F133B1600C1E237 /* MonthCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEF4976F1F042BF40037F239 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF497701F042BF40037F239 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEF497741F042BF40037F239 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF497751F042BF40037F239 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEF497781F042BF40037F239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEF497791F042BF40037F239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEF4977B1F042BF40037F239 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVKM27U5E4;
+				INFOPLIST_FILE = "SHP Schedule/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.shschools.kmorris.SHP-Schedule";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BEF4977C1F042BF40037F239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVKM27U5E4;
+				INFOPLIST_FILE = "SHP Schedule/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.shschools.kmorris.SHP-Schedule";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF497631F042BF40037F239 /* Build configuration list for PBXProject "SHP Schedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF497781F042BF40037F239 /* Debug */,
+				BEF497791F042BF40037F239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF4977A1F042BF40037F239 /* Build configuration list for PBXNativeTarget "SHP Schedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF4977B1F042BF40037F239 /* Debug */,
+				BEF4977C1F042BF40037F239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEF497601F042BF40037F239 /* Project object */;
+}

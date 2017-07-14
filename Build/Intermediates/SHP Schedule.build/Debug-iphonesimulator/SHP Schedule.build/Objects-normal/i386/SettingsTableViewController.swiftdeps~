@@ -1,0 +1,686 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SettingsTableViewController"
+provides-nominal:
+- "C12SHP_Schedule27SettingsTableViewController"
+provides-member:
+- ["C12SHP_Schedule27SettingsTableViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "numberOfSections"
+- "periods"
+- "tableView"
+- "viewDidLoad"
+depends-top-level:
+- !private "=="
+- !private "??"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- "CastingPrecedence"
+- "IndexPath"
+- "Int"
+- "NSIndexPath"
+- !private "PeriodTableViewCell"
+- "SchoolSchedule"
+- "SettingsTableViewController"
+- "String"
+- !private "StringLiteralType"
+- "TernaryPrecedence"
+- "UITableView"
+- !private "UITableViewAutomaticDimension"
+- "UITableViewCell"
+- "UITableViewController"
+- !private "UpdateTableViewCell"
+depends-member:
+- !private ["Ps9AnyObject", "UITableViewAutomaticDimension"]
+- !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "estimatedRowHeight"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "isToolbarHidden"]
+- !private ["Ps9AnyObject", "lastUpdated"]
+- !private ["Ps9AnyObject", "navigationController"]
+- !private ["Ps9AnyObject", "periods"]
+- !private ["Ps9AnyObject", "personalSchedule"]
+- !private ["Ps9AnyObject", "rowHeight"]
+- !private ["Ps9AnyObject", "schoolSchedule"]
+- !private ["Ps9AnyObject", "section"]
+- !private ["Ps9AnyObject", "tableView"]
+- !private ["Ps9AnyObject", "updateUI"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "row"]
+- !private ["Ps23BidirectionalCollection", "section"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "estimatedRowHeight"]
+- !private ["PSo15CALayerDelegate", "lastUpdated"]
+- !private ["PSo15CALayerDelegate", "rowHeight"]
+- !private ["PSo15CALayerDelegate", "updateUI"]
+- !private ["Ps7CVarArg", "UITableViewAutomaticDimension"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "estimatedRowHeight"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isToolbarHidden"]
+- !private ["Ps7CVarArg", "lastUpdated"]
+- !private ["Ps7CVarArg", "navigationController"]
+- !private ["Ps7CVarArg", "periods"]
+- !private ["Ps7CVarArg", "rowHeight"]
+- !private ["Ps7CVarArg", "schoolSchedule"]
+- !private ["Ps7CVarArg", "section"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "tableView"]
+- !private ["Ps7CVarArg", "updateUI"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "row"]
+- !private ["Ps10Collection", "section"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "row"]
+- !private ["Ps10Comparable", "section"]
+- !private ["Ps28CustomDebugStringConvertible", "UITableViewAutomaticDimension"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "estimatedRowHeight"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "isToolbarHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "lastUpdated"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- !private ["Ps28CustomDebugStringConvertible", "periods"]
+- !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "rowHeight"]
+- !private ["Ps28CustomDebugStringConvertible", "schoolSchedule"]
+- !private ["Ps28CustomDebugStringConvertible", "section"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps28CustomDebugStringConvertible", "updateUI"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "row"]
+- !private ["Ps17CustomReflectable", "section"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "UITableViewAutomaticDimension"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "estimatedRowHeight"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "isToolbarHidden"]
+- !private ["Ps23CustomStringConvertible", "lastUpdated"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
+- !private ["Ps23CustomStringConvertible", "periods"]
+- !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "rowHeight"]
+- !private ["Ps23CustomStringConvertible", "schoolSchedule"]
+- !private ["Ps23CustomStringConvertible", "section"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "tableView"]
+- !private ["Ps23CustomStringConvertible", "updateUI"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "UITableViewAutomaticDimension"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "estimatedRowHeight"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "isToolbarHidden"]
+- !private ["Ps9Equatable", "lastUpdated"]
+- !private ["Ps9Equatable", "navigationController"]
+- !private ["Ps9Equatable", "periods"]
+- !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "rowHeight"]
+- !private ["Ps9Equatable", "schoolSchedule"]
+- !private ["Ps9Equatable", "section"]
+- !private ["Ps9Equatable", "tableView"]
+- !private ["Ps9Equatable", "updateUI"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "row"]
+- !private ["Ps25ExpressibleByArrayLiteral", "section"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "UITableViewAutomaticDimension"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "estimatedRowHeight"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "isToolbarHidden"]
+- !private ["Ps8Hashable", "lastUpdated"]
+- !private ["Ps8Hashable", "navigationController"]
+- !private ["Ps8Hashable", "periods"]
+- !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "rowHeight"]
+- !private ["Ps8Hashable", "schoolSchedule"]
+- !private ["Ps8Hashable", "section"]
+- !private ["Ps8Hashable", "tableView"]
+- !private ["Ps8Hashable", "updateUI"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["V10Foundation9IndexPath", "row"]
+- !private ["V10Foundation9IndexPath", "section"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "row"]
+- !private ["Ps17MutableCollection", "section"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["PSo8NSCoding", "UITableViewAutomaticDimension"]
+- !private ["PSo8NSCoding", "dequeueReusableCell"]
+- !private ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "estimatedRowHeight"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isToolbarHidden"]
+- !private ["PSo8NSCoding", "lastUpdated"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "periods"]
+- !private ["PSo8NSCoding", "rowHeight"]
+- !private ["PSo8NSCoding", "schoolSchedule"]
+- !private ["PSo8NSCoding", "section"]
+- !private ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "updateUI"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "section"]
+- !private ["PSo26NSExtensionRequestHandling", "UITableViewAutomaticDimension"]
+- !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "isToolbarHidden"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- !private ["PSo26NSExtensionRequestHandling", "periods"]
+- !private ["PSo26NSExtensionRequestHandling", "schoolSchedule"]
+- !private ["PSo26NSExtensionRequestHandling", "tableView"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo11NSIndexPath", "section"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "IndexPath"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "PeriodTableViewCell"]
+- ["CSo8NSObject", "SchoolSchedule"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UITableView"]
+- !private ["CSo8NSObject", "UITableViewAutomaticDimension"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "UpdateTableViewCell"]
+- !private ["CSo8NSObject", "dequeueReusableCell"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "estimatedRowHeight"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isToolbarHidden"]
+- !private ["CSo8NSObject", "lastUpdated"]
+- !private ["CSo8NSObject", "navigationController"]
+- ["CSo8NSObject", "numberOfSections"]
+- ["CSo8NSObject", "periods"]
+- !private ["CSo8NSObject", "rowHeight"]
+- ["CSo8NSObject", "schoolSchedule"]
+- !private ["CSo8NSObject", "section"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "updateUI"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "UITableViewAutomaticDimension"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "estimatedRowHeight"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isToolbarHidden"]
+- !private ["PSo16NSObjectProtocol", "lastUpdated"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "periods"]
+- !private ["PSo16NSObjectProtocol", "rowHeight"]
+- !private ["PSo16NSObjectProtocol", "schoolSchedule"]
+- !private ["PSo16NSObjectProtocol", "section"]
+- !private ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "updateUI"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "section"]
+- !private ["CSo8NSString", "init"]
+- !private ["C12SHP_Schedule19PeriodTableViewCell", "updateUI"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "row"]
+- !private ["Ps22RandomAccessCollection", "section"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["P10Foundation20ReferenceConvertible", "row"]
+- !private ["P10Foundation20ReferenceConvertible", "section"]
+- !private ["C12SHP_Schedule14SchoolSchedule", "personalSchedule"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "row"]
+- !private ["Ps8Sequence", "section"]
+- !private ["Ps8Sequence", "subscript"]
+- ["C12SHP_Schedule27SettingsTableViewController", "CGFloat"]
+- ["C12SHP_Schedule27SettingsTableViewController", "IndexPath"]
+- ["C12SHP_Schedule27SettingsTableViewController", "Int"]
+- ["C12SHP_Schedule27SettingsTableViewController", "NSIndexPath"]
+- !private ["C12SHP_Schedule27SettingsTableViewController", "PeriodTableViewCell"]
+- ["C12SHP_Schedule27SettingsTableViewController", "SchoolSchedule"]
+- ["C12SHP_Schedule27SettingsTableViewController", "String"]
+- ["C12SHP_Schedule27SettingsTableViewController", "UITableView"]
+- !private ["C12SHP_Schedule27SettingsTableViewController", "UITableViewAutomaticDimension"]
+- ["C12SHP_Schedule27SettingsTableViewController", "UITableViewCell"]
+- !private ["C12SHP_Schedule27SettingsTableViewController", "UpdateTableViewCell"]
+- ["C12SHP_Schedule27SettingsTableViewController", "deinit"]
+- ["C12SHP_Schedule27SettingsTableViewController", "didReceiveMemoryWarning"]
+- ["C12SHP_Schedule27SettingsTableViewController", "init"]
+- !private ["C12SHP_Schedule27SettingsTableViewController", "navigationController"]
+- ["C12SHP_Schedule27SettingsTableViewController", "numberOfSections"]
+- ["C12SHP_Schedule27SettingsTableViewController", "periods"]
+- ["C12SHP_Schedule27SettingsTableViewController", "schoolSchedule"]
+- ["C12SHP_Schedule27SettingsTableViewController", "tableView"]
+- ["C12SHP_Schedule27SettingsTableViewController", "viewDidLoad"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "estimatedRowHeight"]
+- !private ["PSo29UIAccessibilityIdentification", "lastUpdated"]
+- !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
+- !private ["PSo29UIAccessibilityIdentification", "updateUI"]
+- !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "estimatedRowHeight"]
+- !private ["PSo12UIAppearance", "lastUpdated"]
+- !private ["PSo12UIAppearance", "rowHeight"]
+- !private ["PSo12UIAppearance", "updateUI"]
+- !private ["PSo21UIAppearanceContainer", "UITableViewAutomaticDimension"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "estimatedRowHeight"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isToolbarHidden"]
+- !private ["PSo21UIAppearanceContainer", "lastUpdated"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "periods"]
+- !private ["PSo21UIAppearanceContainer", "rowHeight"]
+- !private ["PSo21UIAppearanceContainer", "schoolSchedule"]
+- !private ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "updateUI"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "UITableViewAutomaticDimension"]
+- !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "isToolbarHidden"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- !private ["PSo18UIContentContainer", "periods"]
+- !private ["PSo18UIContentContainer", "schoolSchedule"]
+- !private ["PSo18UIContentContainer", "tableView"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "estimatedRowHeight"]
+- !private ["PSo17UICoordinateSpace", "lastUpdated"]
+- !private ["PSo17UICoordinateSpace", "rowHeight"]
+- !private ["PSo17UICoordinateSpace", "updateUI"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "estimatedRowHeight"]
+- !private ["PSo13UIDynamicItem", "lastUpdated"]
+- !private ["PSo13UIDynamicItem", "rowHeight"]
+- !private ["PSo13UIDynamicItem", "updateUI"]
+- !private ["PSo18UIFocusEnvironment", "UITableViewAutomaticDimension"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "estimatedRowHeight"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isToolbarHidden"]
+- !private ["PSo18UIFocusEnvironment", "lastUpdated"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "periods"]
+- !private ["PSo18UIFocusEnvironment", "rowHeight"]
+- !private ["PSo18UIFocusEnvironment", "schoolSchedule"]
+- !private ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "updateUI"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "estimatedRowHeight"]
+- !private ["PSo11UIFocusItem", "lastUpdated"]
+- !private ["PSo11UIFocusItem", "rowHeight"]
+- !private ["PSo11UIFocusItem", "updateUI"]
+- !private ["PSo27UIGestureRecognizerDelegate", "lastUpdated"]
+- !private ["PSo27UIGestureRecognizerDelegate", "updateUI"]
+- !private ["CSo22UINavigationController", "isToolbarHidden"]
+- ["CSo11UIResponder", "CGFloat"]
+- ["CSo11UIResponder", "IndexPath"]
+- ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "PeriodTableViewCell"]
+- ["CSo11UIResponder", "SchoolSchedule"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UITableView"]
+- !private ["CSo11UIResponder", "UITableViewAutomaticDimension"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "UpdateTableViewCell"]
+- !private ["CSo11UIResponder", "dequeueReusableCell"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "estimatedRowHeight"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "isToolbarHidden"]
+- !private ["CSo11UIResponder", "lastUpdated"]
+- !private ["CSo11UIResponder", "navigationController"]
+- ["CSo11UIResponder", "numberOfSections"]
+- ["CSo11UIResponder", "periods"]
+- !private ["CSo11UIResponder", "rowHeight"]
+- ["CSo11UIResponder", "schoolSchedule"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "updateUI"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "UITableViewAutomaticDimension"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- !private ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "estimatedRowHeight"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "isToolbarHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "lastUpdated"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- !private ["PSo30UIResponderStandardEditActions", "periods"]
+- !private ["PSo30UIResponderStandardEditActions", "rowHeight"]
+- !private ["PSo30UIResponderStandardEditActions", "schoolSchedule"]
+- !private ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["PSo30UIResponderStandardEditActions", "updateUI"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "dequeueReusableCell"]
+- !private ["CSo12UIScrollView", "estimatedRowHeight"]
+- !private ["CSo12UIScrollView", "rowHeight"]
+- !private ["PSo20UIScrollViewDelegate", "UITableViewAutomaticDimension"]
+- !private ["PSo20UIScrollViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
+- !private ["PSo20UIScrollViewDelegate", "periods"]
+- !private ["PSo20UIScrollViewDelegate", "schoolSchedule"]
+- !private ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "UITableViewAutomaticDimension"]
+- !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "isToolbarHidden"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- !private ["PSo16UIStateRestoring", "periods"]
+- !private ["PSo16UIStateRestoring", "schoolSchedule"]
+- !private ["PSo16UIStateRestoring", "tableView"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "dequeueReusableCell"]
+- !private ["CSo11UITableView", "estimatedRowHeight"]
+- !private ["CSo11UITableView", "rowHeight"]
+- !private ["CSo15UITableViewCell", "lastUpdated"]
+- !private ["CSo15UITableViewCell", "updateUI"]
+- ["CSo21UITableViewController", "CGFloat"]
+- ["CSo21UITableViewController", "IndexPath"]
+- ["CSo21UITableViewController", "Int"]
+- ["CSo21UITableViewController", "NSIndexPath"]
+- !private ["CSo21UITableViewController", "PeriodTableViewCell"]
+- ["CSo21UITableViewController", "SchoolSchedule"]
+- ["CSo21UITableViewController", "String"]
+- ["CSo21UITableViewController", "UITableView"]
+- !private ["CSo21UITableViewController", "UITableViewAutomaticDimension"]
+- ["CSo21UITableViewController", "UITableViewCell"]
+- !private ["CSo21UITableViewController", "UpdateTableViewCell"]
+- ["CSo21UITableViewController", "didReceiveMemoryWarning"]
+- ["CSo21UITableViewController", "init"]
+- !private ["CSo21UITableViewController", "navigationController"]
+- ["CSo21UITableViewController", "numberOfSections"]
+- ["CSo21UITableViewController", "periods"]
+- ["CSo21UITableViewController", "schoolSchedule"]
+- ["CSo21UITableViewController", "tableView"]
+- ["CSo21UITableViewController", "viewDidLoad"]
+- ["CSo21UITableViewController", ""]
+- !private ["PSo21UITableViewDataSource", "UITableViewAutomaticDimension"]
+- !private ["PSo21UITableViewDataSource", "didReceiveMemoryWarning"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
+- !private ["PSo21UITableViewDataSource", "periods"]
+- !private ["PSo21UITableViewDataSource", "schoolSchedule"]
+- !private ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "viewDidLoad"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo19UITableViewDelegate", "UITableViewAutomaticDimension"]
+- !private ["PSo19UITableViewDelegate", "didReceiveMemoryWarning"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
+- !private ["PSo19UITableViewDelegate", "periods"]
+- !private ["PSo19UITableViewDelegate", "schoolSchedule"]
+- !private ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo19UITableViewDelegate", "viewDidLoad"]
+- ["PSo19UITableViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "UITableViewAutomaticDimension"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "estimatedRowHeight"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isToolbarHidden"]
+- !private ["PSo18UITraitEnvironment", "lastUpdated"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "periods"]
+- !private ["PSo18UITraitEnvironment", "rowHeight"]
+- !private ["PSo18UITraitEnvironment", "schoolSchedule"]
+- !private ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "updateUI"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "estimatedRowHeight"]
+- !private ["CSo6UIView", "lastUpdated"]
+- !private ["CSo6UIView", "rowHeight"]
+- !private ["CSo6UIView", "updateUI"]
+- ["CSo16UIViewController", "CGFloat"]
+- ["CSo16UIViewController", "IndexPath"]
+- ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "PeriodTableViewCell"]
+- ["CSo16UIViewController", "SchoolSchedule"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "UITableView"]
+- !private ["CSo16UIViewController", "UITableViewAutomaticDimension"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- !private ["CSo16UIViewController", "UpdateTableViewCell"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "isToolbarHidden"]
+- !private ["CSo16UIViewController", "navigationController"]
+- ["CSo16UIViewController", "numberOfSections"]
+- ["CSo16UIViewController", "periods"]
+- ["CSo16UIViewController", "schoolSchedule"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["C12SHP_Schedule19UpdateTableViewCell", "lastUpdated"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps23_BidirectionalIndexable", "row"]
+- !private ["Ps23_BidirectionalIndexable", "section"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "estimatedRowHeight"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "lastUpdated"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rowHeight"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateUI"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "section"]
+- !private ["Ps9_Hashable", "UITableViewAutomaticDimension"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "estimatedRowHeight"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "isToolbarHidden"]
+- !private ["Ps9_Hashable", "lastUpdated"]
+- !private ["Ps9_Hashable", "navigationController"]
+- !private ["Ps9_Hashable", "periods"]
+- !private ["Ps9_Hashable", "row"]
+- !private ["Ps9_Hashable", "rowHeight"]
+- !private ["Ps9_Hashable", "schoolSchedule"]
+- !private ["Ps9_Hashable", "section"]
+- !private ["Ps9_Hashable", "tableView"]
+- !private ["Ps9_Hashable", "updateUI"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "row"]
+- !private ["Ps10_Indexable", "section"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "row"]
+- !private ["Ps14_IndexableBase", "section"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps17_MutableIndexable", "row"]
+- !private ["Ps17_MutableIndexable", "section"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "row"]
+- !private ["Ps21_ObjectiveCBridgeable", "section"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps22_RandomAccessIndexable", "row"]
+- !private ["Ps22_RandomAccessIndexable", "section"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "V10Foundation9IndexPath"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "CSo11NSIndexPath"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "C12SHP_Schedule19PeriodTableViewCell"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "C12SHP_Schedule14SchoolSchedule"
+- !private "Ps8Sequence"
+- "C12SHP_Schedule27SettingsTableViewController"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- "CSo21UITableViewController"
+- "PSo21UITableViewDataSource"
+- "PSo19UITableViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "C12SHP_Schedule19UpdateTableViewCell"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+interface-hash: "b2e34390daf8fd8c0e48e7bfb90ab5cc"
