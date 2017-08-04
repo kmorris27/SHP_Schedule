@@ -18,9 +18,11 @@ provides-dynamic-lookup:
 - "weekForView"
 depends-top-level:
 - "*"
+- !private "+"
 - !private "-"
 - !private "/"
 - !private "=="
+- !private ">"
 - !private "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
@@ -92,12 +94,16 @@ depends-member:
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "resetToFirstDayOfWeek"]
 - !private ["Ps9AnyObject", "reuseIdentifier"]
+- !private ["Ps9AnyObject", "rowHeight"]
+- !private ["Ps9AnyObject", "scheduleArrayForDay"]
 - !private ["Ps9AnyObject", "tableView"]
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "updateUIForNewWeek"]
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "weekForView"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "count"]
+- !private ["Ps23BidirectionalCollection", "count"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Ps17BitwiseOperations", "init"]
@@ -112,6 +118,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "layer"]
 - !private ["PSo15CALayerDelegate", "register"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "rowHeight"]
+- !private ["PSo15CALayerDelegate", "scheduleArrayForDay"]
 - !private ["PSo15CALayerDelegate", "tableView"]
 - !private ["PSo13CAMediaTiming", "borderColor"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
@@ -138,6 +146,7 @@ depends-member:
 - !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "cgColor"]
 - ["Ps7CVarArg", "collectionView"]
+- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "current"]
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "dayForView"]
@@ -160,6 +169,8 @@ depends-member:
 - !private ["Ps7CVarArg", "reloadData"]
 - !private ["Ps7CVarArg", "resetToFirstDayOfWeek"]
 - !private ["Ps7CVarArg", "reuseIdentifier"]
+- !private ["Ps7CVarArg", "rowHeight"]
+- !private ["Ps7CVarArg", "scheduleArrayForDay"]
 - !private ["Ps7CVarArg", "tableView"]
 - !private ["Ps7CVarArg", "title"]
 - !private ["Ps7CVarArg", "updateUIForNewWeek"]
@@ -169,6 +180,7 @@ depends-member:
 - !private ["V10Foundation8Calendar", "Component"]
 - !private ["V10Foundation8Calendar", "current"]
 - !private ["V10Foundation8Calendar", "dateComponents"]
+- !private ["Ps10Collection", "count"]
 - !private ["Ps10Collection", "row"]
 - !private ["Ps10Comparable", "UIDeviceOrientationDidChange"]
 - !private ["Ps10Comparable", "addingTimeInterval"]
@@ -198,6 +210,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "dateComponents"]
@@ -224,6 +237,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "resetToFirstDayOfWeek"]
 - !private ["Ps28CustomDebugStringConvertible", "reuseIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "rowHeight"]
+- !private ["Ps28CustomDebugStringConvertible", "scheduleArrayForDay"]
 - !private ["Ps28CustomDebugStringConvertible", "tableView"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "toString"]
@@ -242,6 +257,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Component"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "addingTimeInterval"]
+- !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "current"]
 - !private ["Ps17CustomReflectable", "dateComponents"]
 - !private ["Ps17CustomReflectable", "height"]
@@ -273,6 +289,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - ["Ps23CustomStringConvertible", "collectionView"]
+- !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "dateComponents"]
@@ -298,6 +315,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "resetToFirstDayOfWeek"]
 - !private ["Ps23CustomStringConvertible", "reuseIdentifier"]
 - !private ["Ps23CustomStringConvertible", "row"]
+- !private ["Ps23CustomStringConvertible", "rowHeight"]
+- !private ["Ps23CustomStringConvertible", "scheduleArrayForDay"]
 - !private ["Ps23CustomStringConvertible", "tableView"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "toString"]
@@ -364,6 +383,8 @@ depends-member:
 - !private ["Ps9Equatable", "resetToFirstDayOfWeek"]
 - !private ["Ps9Equatable", "reuseIdentifier"]
 - !private ["Ps9Equatable", "row"]
+- !private ["Ps9Equatable", "rowHeight"]
+- !private ["Ps9Equatable", "scheduleArrayForDay"]
 - !private ["Ps9Equatable", "tableView"]
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "toString"]
@@ -373,6 +394,7 @@ depends-member:
 - !private ["Ps9Equatable", "weekday"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
@@ -433,6 +455,8 @@ depends-member:
 - !private ["Ps8Hashable", "resetToFirstDayOfWeek"]
 - !private ["Ps8Hashable", "reuseIdentifier"]
 - !private ["Ps8Hashable", "row"]
+- !private ["Ps8Hashable", "rowHeight"]
+- !private ["Ps8Hashable", "scheduleArrayForDay"]
 - !private ["Ps8Hashable", "tableView"]
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "toString"]
@@ -448,6 +472,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "count"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGSize"]
@@ -486,6 +511,8 @@ depends-member:
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "resetToFirstDayOfWeek"]
 - !private ["PSo8NSCoding", "reuseIdentifier"]
+- !private ["PSo8NSCoding", "rowHeight"]
+- !private ["PSo8NSCoding", "scheduleArrayForDay"]
 - !private ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "updateUIForNewWeek"]
@@ -576,6 +603,8 @@ depends-member:
 - !private ["CSo8NSObject", "reloadData"]
 - ["CSo8NSObject", "resetToFirstDayOfWeek"]
 - !private ["CSo8NSObject", "reuseIdentifier"]
+- !private ["CSo8NSObject", "rowHeight"]
+- !private ["CSo8NSObject", "scheduleArrayForDay"]
 - !private ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "updateUIForNewWeek"]
@@ -622,6 +651,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "resetToFirstDayOfWeek"]
 - !private ["PSo16NSObjectProtocol", "reuseIdentifier"]
+- !private ["PSo16NSObjectProtocol", "rowHeight"]
+- !private ["PSo16NSObjectProtocol", "scheduleArrayForDay"]
 - !private ["PSo16NSObjectProtocol", "tableView"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "updateUIForNewWeek"]
@@ -635,7 +666,9 @@ depends-member:
 - !private ["VCSo14NSNotification4Name", "UIDeviceOrientationDidChange"]
 - !private ["CSo18NotificationCenter", "addObserver"]
 - !private ["CSo18NotificationCenter", "default"]
+- !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps22RandomAccessCollection", "row"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
 - !private ["Ps16RawRepresentable", "UIDeviceOrientationDidChange"]
 - !private ["Ps16RawRepresentable", "landscapeLeft"]
 - !private ["Ps16RawRepresentable", "landscapeRight"]
@@ -649,6 +682,7 @@ depends-member:
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["P10Foundation20ReferenceConvertible", "toString"]
 - !private ["P10Foundation20ReferenceConvertible", "weekday"]
+- !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps13SignedInteger", "init"]
 - !private ["Ps12SignedNumber", "init"]
@@ -664,6 +698,8 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "register"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
+- !private ["PSo29UIAccessibilityIdentification", "scheduleArrayForDay"]
 - !private ["PSo29UIAccessibilityIdentification", "tableView"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "dataSource"]
@@ -673,6 +709,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "register"]
 - !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "rowHeight"]
+- !private ["PSo12UIAppearance", "scheduleArrayForDay"]
 - !private ["PSo12UIAppearance", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
@@ -705,6 +743,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "resetToFirstDayOfWeek"]
 - !private ["PSo21UIAppearanceContainer", "reuseIdentifier"]
+- !private ["PSo21UIAppearanceContainer", "rowHeight"]
+- !private ["PSo21UIAppearanceContainer", "scheduleArrayForDay"]
 - !private ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "title"]
 - !private ["PSo21UIAppearanceContainer", "updateUIForNewWeek"]
@@ -713,6 +753,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo24UICollectionReusableView", "dayForView"]
 - !private ["CSo24UICollectionReusableView", "layer"]
+- !private ["CSo24UICollectionReusableView", "scheduleArrayForDay"]
 - !private ["CSo24UICollectionReusableView", "tableView"]
 - !private ["CSo16UICollectionView", "bounds"]
 - !private ["CSo16UICollectionView", "dequeueReusableCell"]
@@ -720,6 +761,7 @@ depends-member:
 - !private ["CSo16UICollectionView", "reloadData"]
 - !private ["CSo20UICollectionViewCell", "dayForView"]
 - !private ["CSo20UICollectionViewCell", "layer"]
+- !private ["CSo20UICollectionViewCell", "scheduleArrayForDay"]
 - !private ["CSo20UICollectionViewCell", "tableView"]
 - !private ["CSo26UICollectionViewController", "CGFloat"]
 - ["CSo26UICollectionViewController", "CGSize"]
@@ -869,6 +911,8 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "register"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "rowHeight"]
+- !private ["PSo17UICoordinateSpace", "scheduleArrayForDay"]
 - !private ["PSo17UICoordinateSpace", "tableView"]
 - !private ["CSo8UIDevice", "current"]
 - !private ["CSo8UIDevice", "orientation"]
@@ -884,6 +928,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "register"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "rowHeight"]
+- !private ["PSo13UIDynamicItem", "scheduleArrayForDay"]
 - !private ["PSo13UIDynamicItem", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
@@ -916,6 +962,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "resetToFirstDayOfWeek"]
 - !private ["PSo18UIFocusEnvironment", "reuseIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "rowHeight"]
+- !private ["PSo18UIFocusEnvironment", "scheduleArrayForDay"]
 - !private ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "title"]
 - !private ["PSo18UIFocusEnvironment", "updateUIForNewWeek"]
@@ -930,6 +978,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "layer"]
 - !private ["PSo11UIFocusItem", "register"]
 - !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "rowHeight"]
+- !private ["PSo11UIFocusItem", "scheduleArrayForDay"]
 - !private ["PSo11UIFocusItem", "tableView"]
 - !private ["CSo22UINavigationController", "isToolbarHidden"]
 - !private ["CSo22UINavigationController", "popViewController"]
@@ -974,6 +1024,8 @@ depends-member:
 - !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "resetToFirstDayOfWeek"]
 - !private ["CSo11UIResponder", "reuseIdentifier"]
+- !private ["CSo11UIResponder", "rowHeight"]
+- !private ["CSo11UIResponder", "scheduleArrayForDay"]
 - !private ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "title"]
 - ["CSo11UIResponder", "updateUIForNewWeek"]
@@ -1010,6 +1062,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "reloadData"]
 - !private ["PSo30UIResponderStandardEditActions", "resetToFirstDayOfWeek"]
 - !private ["PSo30UIResponderStandardEditActions", "reuseIdentifier"]
+- !private ["PSo30UIResponderStandardEditActions", "rowHeight"]
+- !private ["PSo30UIResponderStandardEditActions", "scheduleArrayForDay"]
 - !private ["PSo30UIResponderStandardEditActions", "tableView"]
 - !private ["PSo30UIResponderStandardEditActions", "title"]
 - !private ["PSo30UIResponderStandardEditActions", "updateUIForNewWeek"]
@@ -1022,6 +1076,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
 - !private ["CSo12UIScrollView", "register"]
 - !private ["CSo12UIScrollView", "reloadData"]
+- !private ["CSo12UIScrollView", "rowHeight"]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
 - !private ["PSo20UIScrollViewDelegate", "Calendar"]
@@ -1045,6 +1100,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "resetToFirstDayOfWeek"]
 - !private ["PSo20UIScrollViewDelegate", "reuseIdentifier"]
+- !private ["PSo20UIScrollViewDelegate", "scheduleArrayForDay"]
 - !private ["PSo20UIScrollViewDelegate", "tableView"]
 - !private ["PSo20UIScrollViewDelegate", "title"]
 - !private ["PSo20UIScrollViewDelegate", "updateUIForNewWeek"]
@@ -1083,11 +1139,14 @@ depends-member:
 - !private ["CSo11UITableView", "delegate"]
 - !private ["CSo11UITableView", "register"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo11UITableView", "rowHeight"]
 - !private ["PSo21UITableViewDataSource", "dayForView"]
 - !private ["PSo21UITableViewDataSource", "layer"]
+- !private ["PSo21UITableViewDataSource", "scheduleArrayForDay"]
 - !private ["PSo21UITableViewDataSource", "tableView"]
 - !private ["PSo19UITableViewDelegate", "dayForView"]
 - !private ["PSo19UITableViewDelegate", "layer"]
+- !private ["PSo19UITableViewDelegate", "scheduleArrayForDay"]
 - !private ["PSo19UITableViewDelegate", "tableView"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
@@ -1120,6 +1179,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "resetToFirstDayOfWeek"]
 - !private ["PSo18UITraitEnvironment", "reuseIdentifier"]
+- !private ["PSo18UITraitEnvironment", "rowHeight"]
+- !private ["PSo18UITraitEnvironment", "scheduleArrayForDay"]
 - !private ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "title"]
 - !private ["PSo18UITraitEnvironment", "updateUIForNewWeek"]
@@ -1134,6 +1195,8 @@ depends-member:
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "register"]
 - !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "rowHeight"]
+- !private ["CSo6UIView", "scheduleArrayForDay"]
 - !private ["CSo6UIView", "tableView"]
 - !private ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGSize"]
@@ -1174,6 +1237,7 @@ depends-member:
 - !private ["C12SHP_Schedule22WeekCollectionViewCell", "dayForView"]
 - !private ["C12SHP_Schedule22WeekCollectionViewCell", "deinit"]
 - !private ["C12SHP_Schedule22WeekCollectionViewCell", "layer"]
+- !private ["C12SHP_Schedule22WeekCollectionViewCell", "scheduleArrayForDay"]
 - !private ["C12SHP_Schedule22WeekCollectionViewCell", "tableView"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "CGFloat"]
 - ["C12SHP_Schedule28WeekCollectionViewController", "CGSize"]
@@ -1210,6 +1274,8 @@ depends-member:
 - ["C12SHP_Schedule28WeekCollectionViewController", "updateUIForNewWeek"]
 - ["C12SHP_Schedule28WeekCollectionViewController", "viewDidLoad"]
 - ["C12SHP_Schedule28WeekCollectionViewController", "weekForView"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
 - !private ["Ps23_BidirectionalIndexable", "row"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
@@ -1221,7 +1287,10 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "register"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rowHeight"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "scheduleArrayForDay"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "tableView"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
@@ -1286,6 +1355,8 @@ depends-member:
 - !private ["Ps9_Hashable", "resetToFirstDayOfWeek"]
 - !private ["Ps9_Hashable", "reuseIdentifier"]
 - !private ["Ps9_Hashable", "row"]
+- !private ["Ps9_Hashable", "rowHeight"]
+- !private ["Ps9_Hashable", "scheduleArrayForDay"]
 - !private ["Ps9_Hashable", "tableView"]
 - !private ["Ps9_Hashable", "title"]
 - !private ["Ps9_Hashable", "toString"]
@@ -1295,7 +1366,9 @@ depends-member:
 - !private ["Ps9_Hashable", "weekday"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "init"]
+- !private ["Ps10_Indexable", "count"]
 - !private ["Ps10_Indexable", "row"]
+- !private ["Ps14_IndexableBase", "count"]
 - !private ["Ps14_IndexableBase", "row"]
 - !private ["Ps8_Integer", "init"]
 - !private ["Ps18_IntegerArithmetic", "init"]
@@ -1304,11 +1377,13 @@ depends-member:
 - !private ["P10Foundation14_MutableBoxing", "dateComponents"]
 - !private ["P10Foundation14_MutableBoxing", "hour"]
 - !private ["P10Foundation14_MutableBoxing", "weekday"]
+- !private ["Ps17_MutableIndexable", "count"]
 - !private ["Ps17_MutableIndexable", "row"]
 - !private ["Ps21_ObjectiveCBridgeable", "Component"]
 - !private ["Ps21_ObjectiveCBridgeable", "UIDeviceOrientationDidChange"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "addingTimeInterval"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "current"]
 - !private ["Ps21_ObjectiveCBridgeable", "dateComponents"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
@@ -1318,13 +1393,16 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "toString"]
 - !private ["Ps21_ObjectiveCBridgeable", "weekday"]
 - !private ["Ps21_ObjectiveCBridgeable", "width"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
 - !private ["Ps22_RandomAccessIndexable", "row"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
 - !private ["Ps14_SignedInteger", "init"]
 - !private ["Ps11_Strideable", "init"]
 - !private ["Ps20_SwiftNewtypeWrapper", "UIDeviceOrientationDidChange"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- !private "Sa"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
@@ -1376,6 +1454,7 @@ depends-nominal:
 - !private "VCSo14NSNotification4Name"
 - !private "CSo18NotificationCenter"
 - !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - !private "Ps8Sequence"
@@ -1418,10 +1497,12 @@ depends-nominal:
 - "CSo16UIViewController"
 - !private "C12SHP_Schedule22WeekCollectionViewCell"
 - "C12SHP_Schedule28WeekCollectionViewController"
+- !private "Ps14_ArrayProtocol"
 - !private "Ps23_BidirectionalIndexable"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps33_ExpressibleByBuiltinFloatLiteral"
@@ -1442,6 +1523,7 @@ depends-nominal:
 - !private "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
 - !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 - !private "Ps20_SwiftNewtypeWrapper"

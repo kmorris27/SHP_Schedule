@@ -218,21 +218,45 @@ class MonthCollectionViewController: UICollectionViewController,UICollectionView
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellForMonthView", for: indexPath)
         let monthCell = cell as! MonthCollectionViewCell
+        let calendar = Calendar.current
+        let today = Date()
         
+        monthCell.layer.borderColor = UIColor.black.cgColor
+        monthCell.layer.borderWidth = 1.0
+
         if monthForView != nil
         {
+            let month = String(calendar.component(.month, from: monthForView!))
             let dayForCellView = dateFromIndexPath(indexPath)
-            let calendar = Calendar.current
             let day = String(calendar.component(.day, from: dayForCellView))
             monthCell.numberLabel.text = day
             let array = scheduleArray(for: dayForCellView)
-            let schedule = array?[0]
+            let schedule = array?[0] ?? ""
             monthCell.scheduleLabel.text = schedule
-            
+            if (today.toDateString()==dayForCellView.toDateString())
+            {
+                
+                monthCell.layer.borderColor = UIColor.red.cgColor
+                monthCell.layer.borderWidth = 3.0
+            }
+            let textColor:UIColor
+            let backgroundColor:UIColor
+            if (month != String(calendar.component(.month, from: dayForCellView)))
+            { textColor = UIColor.darkGray }
+            else
+            { textColor = UIColor.black }
+            let dict = schoolSchedule.schedulePeriodDictionary
+            let periods = dict?[schedule]
+            print("\(schedule)  \(String(describing: periods?.count))")
+            if (periods == nil || periods?.count == 0)
+            { backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)}
+            else
+            { backgroundColor = UIColor.white }
+
+            monthCell.numberLabel.textColor = textColor
+            monthCell.scheduleLabel.textColor = textColor
+            monthCell.backgroundColor = backgroundColor
         }
-        monthCell.layer.borderColor = UIColor.black.cgColor
-        monthCell.layer.borderWidth = 1.0
-        
         return monthCell
     }
     
@@ -260,6 +284,7 @@ class MonthCollectionViewController: UICollectionViewController,UICollectionView
     
     @IBAction func todayButtonPressed(_ sender: Any) {
         monthForView = Date()
+        updateUIForNewMonth()
     }
     // MARK: UICollectionViewDelegate
     

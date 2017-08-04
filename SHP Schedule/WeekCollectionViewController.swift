@@ -129,6 +129,16 @@ class WeekCollectionViewController: UICollectionViewController,UICollectionViewD
         weekCell.dayForView = weekForView?.addingTimeInterval(TimeInterval(oneDay*indexPath.row))
         weekCell.tableView.delegate = weekCell
         weekCell.tableView.dataSource = weekCell
+        // Evan added the lines inbetween the comments
+        weekCell.tableView.rowHeight = collectionView.bounds.height/CGFloat(13)
+        if let periodArray = weekCell.scheduleArrayForDay
+        {
+            if periodArray.count > 9
+            {
+                weekCell.tableView.rowHeight = collectionView.bounds.height/CGFloat(4+periodArray.count)
+            }
+        }
+        // Evan added the lines inbetween the comments
         weekCell.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "WeekTableViewCell")
         weekCell.layer.borderColor = UIColor.black.cgColor
         weekCell.layer.borderWidth = 1.0

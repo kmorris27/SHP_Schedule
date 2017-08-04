@@ -5,6 +5,7 @@ provides-member:
 - ["SS", ""]
 - ["V10Foundation4Date", ""]
 - ["CSo16UIViewController", ""]
+- ["CSo7UIColor", ""]
 - ["SS", "toDate"]
 - ["SS", "toDate"]
 - ["SS", "toTime"]
@@ -13,9 +14,12 @@ provides-member:
 - ["V10Foundation4Date", "toDateString"]
 - ["V10Foundation4Date", "toTimeString"]
 - ["CSo16UIViewController", "contentViewController"]
+- ["CSo7UIColor", "shpRedColor"]
 provides-dynamic-lookup:
 - "contentViewController"
+- "shpRedColor"
 depends-top-level:
+- !private "/"
 - !private "??"
 - "AssignmentPrecedence"
 - !private "Calendar"
@@ -25,9 +29,11 @@ depends-top-level:
 - !private "DateFormatter"
 - "String"
 - !private "StringLiteralType"
+- "UIColor"
 - !private "UINavigationController"
 - "UIViewController"
 depends-member:
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "calendar"]
 - !private ["Ps9AnyObject", "date"]
 - !private ["Ps9AnyObject", "dateFormat"]
@@ -39,6 +45,7 @@ depends-member:
 - !private ["Ps7CVarArg", "Calendar"]
 - !private ["Ps7CVarArg", "CharacterSet"]
 - !private ["Ps7CVarArg", "DateFormatter"]
+- !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "calendar"]
 - !private ["Ps7CVarArg", "date"]
 - !private ["Ps7CVarArg", "dateFormat"]
@@ -59,6 +66,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Calendar"]
 - !private ["Ps28CustomDebugStringConvertible", "CharacterSet"]
 - !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "calendar"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
 - !private ["Ps28CustomDebugStringConvertible", "date"]
@@ -88,6 +96,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Calendar"]
 - !private ["Ps23CustomStringConvertible", "CharacterSet"]
 - !private ["Ps23CustomStringConvertible", "DateFormatter"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "calendar"]
 - !private ["Ps23CustomStringConvertible", "current"]
 - !private ["Ps23CustomStringConvertible", "date"]
@@ -112,6 +121,7 @@ depends-member:
 - !private ["Ps9Equatable", "Calendar"]
 - !private ["Ps9Equatable", "CharacterSet"]
 - !private ["Ps9Equatable", "DateFormatter"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "calendar"]
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "date"]
@@ -150,6 +160,7 @@ depends-member:
 - !private ["Ps8Hashable", "Calendar"]
 - !private ["Ps8Hashable", "CharacterSet"]
 - !private ["Ps8Hashable", "DateFormatter"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "calendar"]
 - !private ["Ps8Hashable", "current"]
 - !private ["Ps8Hashable", "date"]
@@ -173,6 +184,7 @@ depends-member:
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "toDate"]
 - !private ["Ps10MirrorPath", "trimmingCharacters"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "calendar"]
 - !private ["PSo8NSCoding", "date"]
 - !private ["PSo8NSCoding", "dateFormat"]
@@ -181,6 +193,7 @@ depends-member:
 - !private ["PSo8NSCoding", "toDate"]
 - !private ["PSo8NSCoding", "trimmingCharacters"]
 - !private ["PSo8NSCoding", "visibleViewController"]
+- !private ["PSo9NSCopying", "UIColor"]
 - !private ["PSo9NSCopying", "calendar"]
 - !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
@@ -192,6 +205,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "toDate"]
 - !private ["PSo16NSMutableCopying", "trimmingCharacters"]
+- ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UINavigationController"]
 - ["CSo8NSObject", "UIViewController"]
 - !private ["CSo8NSObject", "calendar"]
@@ -199,10 +213,12 @@ depends-member:
 - !private ["CSo8NSObject", "date"]
 - !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "shpRedColor"]
 - !private ["CSo8NSObject", "string"]
 - !private ["CSo8NSObject", "toDate"]
 - !private ["CSo8NSObject", "trimmingCharacters"]
 - !private ["CSo8NSObject", "visibleViewController"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "calendar"]
 - !private ["PSo16NSObjectProtocol", "date"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
@@ -211,6 +227,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "toDate"]
 - !private ["PSo16NSObjectProtocol", "trimmingCharacters"]
 - !private ["PSo16NSObjectProtocol", "visibleViewController"]
+- !private ["PSo14NSSecureCoding", "UIColor"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "toDate"]
 - !private ["PSo14NSSecureCoding", "trimmingCharacters"]
@@ -245,6 +262,9 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "toDate"]
 - !private ["Ps20TextOutputStreamable", "trimmingCharacters"]
 - !private ["PSo21UIAppearanceContainer", "visibleViewController"]
+- ["CSo7UIColor", "UIColor"]
+- !private ["CSo7UIColor", "init"]
+- ["CSo7UIColor", "shpRedColor"]
 - !private ["PSo18UIContentContainer", "visibleViewController"]
 - !private ["PSo18UIFocusEnvironment", "visibleViewController"]
 - !private ["CSo22UINavigationController", "visibleViewController"]
@@ -283,6 +303,8 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "toDate"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "trimmingCharacters"]
+- !private ["Ps26_ExpressibleByColorLiteral", "UIColor"]
+- !private ["Ps26_ExpressibleByColorLiteral", "init"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "Calendar"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "CharacterSet"]
 - !private ["Ps33_ExpressibleByStringInterpolation", "DateFormatter"]
@@ -295,6 +317,7 @@ depends-member:
 - !private ["Ps9_Hashable", "Calendar"]
 - !private ["Ps9_Hashable", "CharacterSet"]
 - !private ["Ps9_Hashable", "DateFormatter"]
+- !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "calendar"]
 - !private ["Ps9_Hashable", "current"]
 - !private ["Ps9_Hashable", "date"]
@@ -352,6 +375,7 @@ depends-nominal:
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - !private "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
 - !private "PSo18UIContentContainer"
 - !private "PSo18UIFocusEnvironment"
 - !private "CSo22UINavigationController"
@@ -364,6 +388,7 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
 - !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - !private "Ps9_Hashable"
@@ -388,4 +413,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
-interface-hash: "ca4ef1b590566c7914b5d052386b5d4c"
+interface-hash: "504adc918ae141f909c9369430d76789"

@@ -57,3 +57,11 @@ extension UIViewController {
     }
 }
 
+    
+    //Evan added the following extension
+    extension UIColor {
+        public static var shpRedColor: UIColor{
+            return UIColor(red: 151.0/255.0, green: 47.0/255.0, blue: 27.0/255.0, alpha: 1.0)
+        }
+}
+

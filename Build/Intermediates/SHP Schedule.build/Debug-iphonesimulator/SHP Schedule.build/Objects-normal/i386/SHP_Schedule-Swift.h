@@ -262,6 +262,12 @@ SWIFT_CLASS("_TtC12SHP_Schedule27SettingsTableViewController")
 @end
 
 
+@interface UIColor (SWIFT_EXTENSION(SHP_Schedule))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _Nonnull shpRedColor;)
++ (UIColor * _Nonnull)shpRedColor SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 @interface UIViewController (SWIFT_EXTENSION(SHP_Schedule))
 @property (nonatomic, readonly, strong) UIViewController * _Nonnull contentViewController;
 @end
@@ -283,6 +289,8 @@ SWIFT_CLASS("_TtC12SHP_Schedule22WeekCollectionViewCell")
 @interface WeekCollectionViewCell : UICollectionViewCell <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) NSDate * _Nullable dayForView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, readonly, copy) NSArray<NSArray<NSString *> *> * _Nullable scheduleArrayForDay;
+@property (nonatomic, readonly) BOOL dayForViewIsToday;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
