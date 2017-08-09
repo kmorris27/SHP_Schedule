@@ -1,0 +1,18 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "860eb5e2fdbf383db5ddac368ee64668"
+build_time: [555562845, 507482000]
+inputs:
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/UpdateTableViewCell.swift": [555132550, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/MonthCollectionViewCell.swift": [555132550, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/SettingsViewController.swift": [555480569, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/SchoolSchedule.swift": [555532398, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/WeekCollectionViewController.swift": [555562794, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/WeekCollectionViewCell.swift": [555533286, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/AppDelegate.swift": [555132550, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/DateTableViewCell.swift": [555386108, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/PeriodTableViewCell.swift": [555479579, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/DayTableViewController.swift": [555562809, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/Extensions.swift": [555562738, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/PeriodDetailTableViewCell.swift": [555386187, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/ScheduleNameTableViewCell.swift": [555386647, 0]
+  "/Users/kmorris/Desktop/SHP Schedule Izzy/SHP Schedule/MonthCollectionViewController.swift": [555562738, 0]

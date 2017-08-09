@@ -1,0 +1,462 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["SS", ""]
+- ["V10Foundation4Date", ""]
+- ["CSo16UIViewController", ""]
+- ["CSo7UIColor", ""]
+- ["SS", "toDate"]
+- ["SS", "toDate"]
+- ["SS", "toTime"]
+- ["SS", "toDateTime"]
+- ["V10Foundation4Date", "toString"]
+- ["V10Foundation4Date", "toDateString"]
+- ["V10Foundation4Date", "toTimeString"]
+- ["CSo16UIViewController", "contentViewController"]
+- ["CSo7UIColor", "fromHex"]
+- ["CSo7UIColor", "schoolColor"]
+provides-dynamic-lookup:
+- "contentViewController"
+- "fromHex"
+- "schoolColor"
+depends-top-level:
+- !private "&"
+- !private "/"
+- !private ">>"
+- !private "??"
+- "AssignmentPrecedence"
+- !private "CGFloat"
+- !private "Calendar"
+- "CastingPrecedence"
+- !private "CharacterSet"
+- "Date"
+- !private "DateFormatter"
+- "String"
+- !private "StringLiteralType"
+- "UIColor"
+- !private "UINavigationController"
+- "UIViewController"
+- "UInt32"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "calendar"]
+- !private ["Ps9AnyObject", "date"]
+- !private ["Ps9AnyObject", "dateFormat"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "string"]
+- !private ["Ps9AnyObject", "toDate"]
+- !private ["Ps9AnyObject", "trimmingCharacters"]
+- !private ["Ps9AnyObject", "visibleViewController"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["Ps7CVarArg", "CGFloat"]
+- !private ["Ps7CVarArg", "Calendar"]
+- !private ["Ps7CVarArg", "CharacterSet"]
+- !private ["Ps7CVarArg", "DateFormatter"]
+- !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "calendar"]
+- !private ["Ps7CVarArg", "date"]
+- !private ["Ps7CVarArg", "dateFormat"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "string"]
+- !private ["Ps7CVarArg", "toDate"]
+- !private ["Ps7CVarArg", "trimmingCharacters"]
+- !private ["Ps7CVarArg", "visibleViewController"]
+- !private ["V10Foundation8Calendar", "current"]
+- !private ["V10Foundation12CharacterSet", "whitespacesAndNewlines"]
+- !private ["Ps10Comparable", "Calendar"]
+- !private ["Ps10Comparable", "CharacterSet"]
+- !private ["Ps10Comparable", "DateFormatter"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "toDate"]
+- !private ["Ps10Comparable", "toString"]
+- !private ["Ps10Comparable", "trimmingCharacters"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "Calendar"]
+- !private ["Ps28CustomDebugStringConvertible", "CharacterSet"]
+- !private ["Ps28CustomDebugStringConvertible", "DateFormatter"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "calendar"]
+- !private ["Ps28CustomDebugStringConvertible", "current"]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
+- !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "string"]
+- !private ["Ps28CustomDebugStringConvertible", "toDate"]
+- !private ["Ps28CustomDebugStringConvertible", "toString"]
+- !private ["Ps28CustomDebugStringConvertible", "trimmingCharacters"]
+- !private ["Ps28CustomDebugStringConvertible", "visibleViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "whitespacesAndNewlines"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Calendar"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "CharacterSet"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "DateFormatter"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "toDate"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "toString"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "trimmingCharacters"]
+- !private ["Ps17CustomReflectable", "Calendar"]
+- !private ["Ps17CustomReflectable", "CharacterSet"]
+- !private ["Ps17CustomReflectable", "DateFormatter"]
+- !private ["Ps17CustomReflectable", "current"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "toDate"]
+- !private ["Ps17CustomReflectable", "toString"]
+- !private ["Ps17CustomReflectable", "trimmingCharacters"]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
+- !private ["Ps23CustomStringConvertible", "Calendar"]
+- !private ["Ps23CustomStringConvertible", "CharacterSet"]
+- !private ["Ps23CustomStringConvertible", "DateFormatter"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "calendar"]
+- !private ["Ps23CustomStringConvertible", "current"]
+- !private ["Ps23CustomStringConvertible", "date"]
+- !private ["Ps23CustomStringConvertible", "dateFormat"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "string"]
+- !private ["Ps23CustomStringConvertible", "toDate"]
+- !private ["Ps23CustomStringConvertible", "toString"]
+- !private ["Ps23CustomStringConvertible", "trimmingCharacters"]
+- !private ["Ps23CustomStringConvertible", "visibleViewController"]
+- !private ["Ps23CustomStringConvertible", "whitespacesAndNewlines"]
+- !private ["V10Foundation4Date", "DateFormatter"]
+- ["V10Foundation4Date", "String"]
+- ["V10Foundation4Date", "toDateString"]
+- ["V10Foundation4Date", "toString"]
+- ["V10Foundation4Date", "toTimeString"]
+- !private ["CSo13DateFormatter", "calendar"]
+- !private ["CSo13DateFormatter", "date"]
+- !private ["CSo13DateFormatter", "dateFormat"]
+- !private ["CSo13DateFormatter", "init"]
+- !private ["CSo13DateFormatter", "string"]
+- !private ["Ps9Equatable", "CGFloat"]
+- !private ["Ps9Equatable", "Calendar"]
+- !private ["Ps9Equatable", "CharacterSet"]
+- !private ["Ps9Equatable", "DateFormatter"]
+- !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "calendar"]
+- !private ["Ps9Equatable", "current"]
+- !private ["Ps9Equatable", "date"]
+- !private ["Ps9Equatable", "dateFormat"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "string"]
+- !private ["Ps9Equatable", "toDate"]
+- !private ["Ps9Equatable", "toString"]
+- !private ["Ps9Equatable", "trimmingCharacters"]
+- !private ["Ps9Equatable", "visibleViewController"]
+- !private ["Ps9Equatable", "whitespacesAndNewlines"]
+- !private ["Ps25ExpressibleByArrayLiteral", "whitespacesAndNewlines"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Calendar"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "CharacterSet"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "DateFormatter"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "toDate"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "trimmingCharacters"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "Calendar"]
+- !private ["Ps26ExpressibleByStringLiteral", "CharacterSet"]
+- !private ["Ps26ExpressibleByStringLiteral", "DateFormatter"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "toDate"]
+- !private ["Ps26ExpressibleByStringLiteral", "trimmingCharacters"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "Calendar"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "CharacterSet"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "DateFormatter"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "toDate"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "trimmingCharacters"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["CSo9Formatter", "calendar"]
+- !private ["CSo9Formatter", "date"]
+- !private ["CSo9Formatter", "dateFormat"]
+- !private ["CSo9Formatter", "init"]
+- !private ["CSo9Formatter", "string"]
+- !private ["Ps8Hashable", "CGFloat"]
+- !private ["Ps8Hashable", "Calendar"]
+- !private ["Ps8Hashable", "CharacterSet"]
+- !private ["Ps8Hashable", "DateFormatter"]
+- !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "calendar"]
+- !private ["Ps8Hashable", "current"]
+- !private ["Ps8Hashable", "date"]
+- !private ["Ps8Hashable", "dateFormat"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "string"]
+- !private ["Ps8Hashable", "toDate"]
+- !private ["Ps8Hashable", "toString"]
+- !private ["Ps8Hashable", "trimmingCharacters"]
+- !private ["Ps8Hashable", "visibleViewController"]
+- !private ["Ps8Hashable", "whitespacesAndNewlines"]
+- !private ["Ps25LosslessStringConvertible", "Calendar"]
+- !private ["Ps25LosslessStringConvertible", "CharacterSet"]
+- !private ["Ps25LosslessStringConvertible", "DateFormatter"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "toDate"]
+- !private ["Ps25LosslessStringConvertible", "trimmingCharacters"]
+- !private ["Ps10MirrorPath", "Calendar"]
+- !private ["Ps10MirrorPath", "CharacterSet"]
+- !private ["Ps10MirrorPath", "DateFormatter"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "toDate"]
+- !private ["Ps10MirrorPath", "trimmingCharacters"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "calendar"]
+- !private ["PSo8NSCoding", "date"]
+- !private ["PSo8NSCoding", "dateFormat"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "string"]
+- !private ["PSo8NSCoding", "toDate"]
+- !private ["PSo8NSCoding", "trimmingCharacters"]
+- !private ["PSo8NSCoding", "visibleViewController"]
+- !private ["PSo9NSCopying", "CGFloat"]
+- !private ["PSo9NSCopying", "UIColor"]
+- !private ["PSo9NSCopying", "calendar"]
+- !private ["PSo9NSCopying", "date"]
+- !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "string"]
+- !private ["PSo9NSCopying", "toDate"]
+- !private ["PSo9NSCopying", "trimmingCharacters"]
+- !private ["PSo26NSExtensionRequestHandling", "visibleViewController"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "toDate"]
+- !private ["PSo16NSMutableCopying", "trimmingCharacters"]
+- !private ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UINavigationController"]
+- ["CSo8NSObject", "UIViewController"]
+- ["CSo8NSObject", "UInt32"]
+- !private ["CSo8NSObject", "calendar"]
+- ["CSo8NSObject", "contentViewController"]
+- !private ["CSo8NSObject", "date"]
+- !private ["CSo8NSObject", "dateFormat"]
+- ["CSo8NSObject", "fromHex"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "schoolColor"]
+- !private ["CSo8NSObject", "string"]
+- !private ["CSo8NSObject", "toDate"]
+- !private ["CSo8NSObject", "trimmingCharacters"]
+- !private ["CSo8NSObject", "visibleViewController"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "calendar"]
+- !private ["PSo16NSObjectProtocol", "date"]
+- !private ["PSo16NSObjectProtocol", "dateFormat"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "string"]
+- !private ["PSo16NSObjectProtocol", "toDate"]
+- !private ["PSo16NSObjectProtocol", "trimmingCharacters"]
+- !private ["PSo16NSObjectProtocol", "visibleViewController"]
+- !private ["PSo14NSSecureCoding", "CGFloat"]
+- !private ["PSo14NSSecureCoding", "UIColor"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "toDate"]
+- !private ["PSo14NSSecureCoding", "trimmingCharacters"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "toDate"]
+- !private ["CSo8NSString", "trimmingCharacters"]
+- !private ["P10Foundation20ReferenceConvertible", "DateFormatter"]
+- !private ["P10Foundation20ReferenceConvertible", "current"]
+- !private ["P10Foundation20ReferenceConvertible", "toString"]
+- !private ["P10Foundation20ReferenceConvertible", "whitespacesAndNewlines"]
+- !private ["Ps10SetAlgebra", "whitespacesAndNewlines"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "Calendar"]
+- !private ["SS", "CharacterSet"]
+- ["SS", "Date"]
+- !private ["SS", "DateFormatter"]
+- ["SS", "String"]
+- !private ["SS", "init"]
+- ["SS", "toDate"]
+- ["SS", "toDateTime"]
+- ["SS", "toTime"]
+- !private ["SS", "trimmingCharacters"]
+- !private ["Ps16TextOutputStream", "Calendar"]
+- !private ["Ps16TextOutputStream", "CharacterSet"]
+- !private ["Ps16TextOutputStream", "DateFormatter"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "toDate"]
+- !private ["Ps16TextOutputStream", "trimmingCharacters"]
+- !private ["Ps20TextOutputStreamable", "Calendar"]
+- !private ["Ps20TextOutputStreamable", "CharacterSet"]
+- !private ["Ps20TextOutputStreamable", "DateFormatter"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "toDate"]
+- !private ["Ps20TextOutputStreamable", "trimmingCharacters"]
+- !private ["PSo21UIAppearanceContainer", "visibleViewController"]
+- !private ["CSo7UIColor", "CGFloat"]
+- ["CSo7UIColor", "UIColor"]
+- ["CSo7UIColor", "UInt32"]
+- ["CSo7UIColor", "fromHex"]
+- !private ["CSo7UIColor", "init"]
+- ["CSo7UIColor", "schoolColor"]
+- !private ["PSo18UIContentContainer", "visibleViewController"]
+- !private ["PSo18UIFocusEnvironment", "visibleViewController"]
+- !private ["CSo22UINavigationController", "visibleViewController"]
+- !private ["CSo11UIResponder", "UINavigationController"]
+- ["CSo11UIResponder", "UIViewController"]
+- ["CSo11UIResponder", "contentViewController"]
+- !private ["CSo11UIResponder", "visibleViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "visibleViewController"]
+- !private ["PSo16UIStateRestoring", "visibleViewController"]
+- !private ["PSo18UITraitEnvironment", "visibleViewController"]
+- !private ["CSo16UIViewController", "UINavigationController"]
+- ["CSo16UIViewController", "UIViewController"]
+- ["CSo16UIViewController", "contentViewController"]
+- !private ["CSo16UIViewController", "visibleViewController"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "Calendar"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "CharacterSet"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "DateFormatter"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "toDate"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "trimmingCharacters"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "Calendar"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "CharacterSet"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "DateFormatter"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "toDate"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "trimmingCharacters"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "Calendar"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "CharacterSet"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "DateFormatter"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "toDate"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "trimmingCharacters"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "Calendar"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "CharacterSet"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "DateFormatter"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "toDate"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "trimmingCharacters"]
+- !private ["Ps26_ExpressibleByColorLiteral", "CGFloat"]
+- !private ["Ps26_ExpressibleByColorLiteral", "UIColor"]
+- !private ["Ps26_ExpressibleByColorLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "Calendar"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "CharacterSet"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "DateFormatter"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "toDate"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "trimmingCharacters"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "toDate"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "trimmingCharacters"]
+- !private ["Ps9_Hashable", "CGFloat"]
+- !private ["Ps9_Hashable", "Calendar"]
+- !private ["Ps9_Hashable", "CharacterSet"]
+- !private ["Ps9_Hashable", "DateFormatter"]
+- !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "calendar"]
+- !private ["Ps9_Hashable", "current"]
+- !private ["Ps9_Hashable", "date"]
+- !private ["Ps9_Hashable", "dateFormat"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "string"]
+- !private ["Ps9_Hashable", "toDate"]
+- !private ["Ps9_Hashable", "toString"]
+- !private ["Ps9_Hashable", "trimmingCharacters"]
+- !private ["Ps9_Hashable", "visibleViewController"]
+- !private ["Ps9_Hashable", "whitespacesAndNewlines"]
+- !private ["P10Foundation14_MutableBoxing", "current"]
+- !private ["P10Foundation18_MutablePairBoxing", "whitespacesAndNewlines"]
+- !private ["Ps21_ObjectiveCBridgeable", "Calendar"]
+- !private ["Ps21_ObjectiveCBridgeable", "CharacterSet"]
+- !private ["Ps21_ObjectiveCBridgeable", "DateFormatter"]
+- !private ["Ps21_ObjectiveCBridgeable", "current"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "toDate"]
+- !private ["Ps21_ObjectiveCBridgeable", "toString"]
+- !private ["Ps21_ObjectiveCBridgeable", "trimmingCharacters"]
+- !private ["Ps21_ObjectiveCBridgeable", "whitespacesAndNewlines"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- !private "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
+- !private "V12CoreGraphics7CGFloat"
+- !private "Ps7CVarArg"
+- !private "V10Foundation8Calendar"
+- !private "V10Foundation12CharacterSet"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "V10Foundation4Date"
+- !private "CSo13DateFormatter"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps13FloatingPoint"
+- !private "CSo9Formatter"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "Ps10SetAlgebra"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
+- !private "PSo18UIContentContainer"
+- !private "PSo18UIFocusEnvironment"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- !private "PSo30UIResponderStandardEditActions"
+- !private "PSo16UIStateRestoring"
+- !private "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByColorLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "Ps9_Hashable"
+- !private "P10Foundation14_MutableBoxing"
+- !private "P10Foundation18_MutablePairBoxing"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+interface-hash: "eb50936a86e2e9b2e2d905c429d90f84"

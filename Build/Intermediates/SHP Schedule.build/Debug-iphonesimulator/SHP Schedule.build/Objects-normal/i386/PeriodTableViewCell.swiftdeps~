@@ -1,0 +1,341 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PeriodTableViewCell"
+provides-nominal:
+- "C12SHP_Schedule19PeriodTableViewCell"
+provides-member:
+- ["C12SHP_Schedule19PeriodTableViewCell", ""]
+provides-dynamic-lookup:
+- "editingPeriodEnded"
+- "periodLabel"
+- "periodTextField"
+- "updateUI"
+depends-top-level:
+- !private "??"
+- "AssignmentPrecedence"
+- !private "Dictionary"
+- "PeriodTableViewCell"
+- "SchoolSchedule"
+- "String"
+- "UILabel"
+- "UITableViewCell"
+- "UITextField"
+depends-member:
+- !private ["Ps9AnyObject", "Dictionary"]
+- ["Ps9AnyObject", "SchoolSchedule"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "periodLabel"]
+- !private ["Ps9AnyObject", "periodTextField"]
+- !private ["Ps9AnyObject", "personalSchedule"]
+- !private ["Ps9AnyObject", "schoolSchedule"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "Dictionary"]
+- ["PSo15CALayerDelegate", "SchoolSchedule"]
+- !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "periodLabel"]
+- !private ["PSo15CALayerDelegate", "periodTextField"]
+- !private ["PSo15CALayerDelegate", "schoolSchedule"]
+- !private ["PSo15CALayerDelegate", "text"]
+- ["PSo15CALayerDelegate", ""]
+- !private ["Ps7CVarArg", "Dictionary"]
+- ["Ps7CVarArg", "SchoolSchedule"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "periodLabel"]
+- !private ["Ps7CVarArg", "periodTextField"]
+- !private ["Ps7CVarArg", "schoolSchedule"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "text"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "Dictionary"]
+- ["Ps28CustomDebugStringConvertible", "SchoolSchedule"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "periodLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "periodTextField"]
+- !private ["Ps28CustomDebugStringConvertible", "schoolSchedule"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Dictionary"]
+- ["Ps23CustomStringConvertible", "SchoolSchedule"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "periodLabel"]
+- !private ["Ps23CustomStringConvertible", "periodTextField"]
+- !private ["Ps23CustomStringConvertible", "schoolSchedule"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Vs10Dictionary", "init"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "Dictionary"]
+- ["Ps9Equatable", "SchoolSchedule"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "periodLabel"]
+- !private ["Ps9Equatable", "periodTextField"]
+- !private ["Ps9Equatable", "schoolSchedule"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", ""]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "init"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- !private ["Ps8Hashable", "Dictionary"]
+- ["Ps8Hashable", "SchoolSchedule"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "periodLabel"]
+- !private ["Ps8Hashable", "periodTextField"]
+- !private ["Ps8Hashable", "schoolSchedule"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", ""]
+- !private ["PSo8NSCoding", "Dictionary"]
+- ["PSo8NSCoding", "SchoolSchedule"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "periodLabel"]
+- !private ["PSo8NSCoding", "periodTextField"]
+- !private ["PSo8NSCoding", "schoolSchedule"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", ""]
+- !private ["CSo8NSObject", "Dictionary"]
+- ["CSo8NSObject", "SchoolSchedule"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "editingPeriodEnded"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "periodLabel"]
+- ["CSo8NSObject", "periodTextField"]
+- ["CSo8NSObject", "schoolSchedule"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "updateUI"]
+- !private ["PSo16NSObjectProtocol", "Dictionary"]
+- ["PSo16NSObjectProtocol", "SchoolSchedule"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "periodLabel"]
+- !private ["PSo16NSObjectProtocol", "periodTextField"]
+- !private ["PSo16NSObjectProtocol", "schoolSchedule"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["C12SHP_Schedule19PeriodTableViewCell", "Dictionary"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "SchoolSchedule"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "String"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "UILabel"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "UITextField"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "deinit"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "editingPeriodEnded"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "init"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "periodLabel"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "periodTextField"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "schoolSchedule"]
+- ["C12SHP_Schedule19PeriodTableViewCell", "updateUI"]
+- ["C12SHP_Schedule14SchoolSchedule", "init"]
+- !private ["C12SHP_Schedule14SchoolSchedule", "personalSchedule"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["PSo29UIAccessibilityIdentification", "Dictionary"]
+- ["PSo29UIAccessibilityIdentification", "SchoolSchedule"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "periodLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "periodTextField"]
+- !private ["PSo29UIAccessibilityIdentification", "schoolSchedule"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "Dictionary"]
+- ["PSo12UIAppearance", "SchoolSchedule"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "periodLabel"]
+- !private ["PSo12UIAppearance", "periodTextField"]
+- !private ["PSo12UIAppearance", "schoolSchedule"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "Dictionary"]
+- ["PSo21UIAppearanceContainer", "SchoolSchedule"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "periodLabel"]
+- !private ["PSo21UIAppearanceContainer", "periodTextField"]
+- !private ["PSo21UIAppearanceContainer", "schoolSchedule"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "Dictionary"]
+- ["PSo17UICoordinateSpace", "SchoolSchedule"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "periodLabel"]
+- !private ["PSo17UICoordinateSpace", "periodTextField"]
+- !private ["PSo17UICoordinateSpace", "schoolSchedule"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "Dictionary"]
+- ["PSo13UIDynamicItem", "SchoolSchedule"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "periodLabel"]
+- !private ["PSo13UIDynamicItem", "periodTextField"]
+- !private ["PSo13UIDynamicItem", "schoolSchedule"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "Dictionary"]
+- ["PSo18UIFocusEnvironment", "SchoolSchedule"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "periodLabel"]
+- !private ["PSo18UIFocusEnvironment", "periodTextField"]
+- !private ["PSo18UIFocusEnvironment", "schoolSchedule"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "Dictionary"]
+- ["PSo11UIFocusItem", "SchoolSchedule"]
+- !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "periodLabel"]
+- !private ["PSo11UIFocusItem", "periodTextField"]
+- !private ["PSo11UIFocusItem", "schoolSchedule"]
+- !private ["PSo11UIFocusItem", "text"]
+- ["PSo11UIFocusItem", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "Dictionary"]
+- ["PSo27UIGestureRecognizerDelegate", "SchoolSchedule"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "periodLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "periodTextField"]
+- !private ["PSo27UIGestureRecognizerDelegate", "schoolSchedule"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["PSo10UIKeyInput", "text"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "Dictionary"]
+- ["CSo11UIResponder", "SchoolSchedule"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "editingPeriodEnded"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "periodLabel"]
+- ["CSo11UIResponder", "periodTextField"]
+- ["CSo11UIResponder", "schoolSchedule"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "updateUI"]
+- !private ["PSo30UIResponderStandardEditActions", "Dictionary"]
+- ["PSo30UIResponderStandardEditActions", "SchoolSchedule"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "periodLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "periodTextField"]
+- !private ["PSo30UIResponderStandardEditActions", "schoolSchedule"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo15UITableViewCell", "Dictionary"]
+- ["CSo15UITableViewCell", "SchoolSchedule"]
+- ["CSo15UITableViewCell", "String"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "UITextField"]
+- ["CSo15UITableViewCell", "editingPeriodEnded"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "periodLabel"]
+- ["CSo15UITableViewCell", "periodTextField"]
+- ["CSo15UITableViewCell", "schoolSchedule"]
+- ["CSo15UITableViewCell", "updateUI"]
+- ["CSo15UITableViewCell", ""]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo18UITraitEnvironment", "Dictionary"]
+- ["PSo18UITraitEnvironment", "SchoolSchedule"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "periodLabel"]
+- !private ["PSo18UITraitEnvironment", "periodTextField"]
+- !private ["PSo18UITraitEnvironment", "schoolSchedule"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "Dictionary"]
+- ["CSo6UIView", "SchoolSchedule"]
+- ["CSo6UIView", "String"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UITextField"]
+- ["CSo6UIView", "editingPeriodEnded"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "periodLabel"]
+- ["CSo6UIView", "periodTextField"]
+- ["CSo6UIView", "schoolSchedule"]
+- !private ["CSo6UIView", "text"]
+- ["CSo6UIView", "updateUI"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Dictionary"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "SchoolSchedule"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "periodLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "periodTextField"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "schoolSchedule"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps9_Hashable", "Dictionary"]
+- ["Ps9_Hashable", "SchoolSchedule"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "periodLabel"]
+- !private ["Ps9_Hashable", "periodTextField"]
+- !private ["Ps9_Hashable", "schoolSchedule"]
+- !private ["Ps9_Hashable", "text"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "C12SHP_Schedule19PeriodTableViewCell"
+- "C12SHP_Schedule14SchoolSchedule"
+- !private "Ps8Sequence"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "PSo10UIKeyInput"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "CSo15UITableViewCell"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
+interface-hash: "e76dc54aa3bfa403899b855bce1fdd7d"
