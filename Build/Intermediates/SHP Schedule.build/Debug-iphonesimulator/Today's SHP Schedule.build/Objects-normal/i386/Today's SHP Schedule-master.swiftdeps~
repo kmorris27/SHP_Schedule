@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "e473e4ea352de4fad4f49b28f2bfa28a"
+build_time: [558888720, 654812000]
+inputs:
+  "/Users/kmorris/Desktop/SHP Schedule/Today's SHP Schedule/WidgetPeriodTableViewCell.swift": [555484352, 0]
+  "/Users/kmorris/Desktop/SHP Schedule/Today's SHP Schedule/TodayViewController.swift": [556945864, 0]
