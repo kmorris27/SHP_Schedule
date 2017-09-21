@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SHP Schedule/DayTableViewController.swift"
-            timestampString = "527054610.584403"
+            timestampString = "527658487.157289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "dayForView"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SHP Schedule/DayTableViewController.swift"
-            timestampString = "527054610.584403"
+            timestampString = "527662071.918213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "deviceOrientationDidChange()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -28,7 +28,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.register(PeriodTableViewCell.self, forCellReuseIdentifier: "cell")
-        let tap = UITapGestureRecognizer(target: self, action: #selector(SettingsViewController.tapGesture))
+        //let tap = UITapGestureRecognizer(target: self, action: #selector(SettingsViewController.tapGesture))
         
         //TODO: - Add full date
         latestPublishedLabel.text! = "Latest published school schedule: " + schoolSchedule.lastTimeServerWasUpdated.toTimeString()

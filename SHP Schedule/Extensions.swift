@@ -9,6 +9,18 @@
 import Foundation
 import UIKit
 
+extension UINavigationController {
+    override open var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
+        return .all
+    }
+}
+
+extension UISplitViewController {
+    override open var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
+        return .all
+    }
+}
+
 extension String {
     
     func toDate(withFormat format:String) -> Date? {

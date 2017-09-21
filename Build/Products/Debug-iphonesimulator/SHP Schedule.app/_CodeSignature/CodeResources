@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		6WSlczpVNxJW0QfHK7x+GW7Miio=
+		5wA3iOmT307uMjC3OdAPUWvnqpg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		bqt/naHUFwuIL2ha2KnDNQCpbgc=
+		o13/USZUbHHmwhgji+LTjn9yoII=
 		</data>
 		<key>Base.lproj/Main.storyboardc/599-dJ-XD5-view-7ja-gi-Klb.nib</key>
 		<data>
-		EHlz9LzXmheNl++fQWiri1ncjHE=
+		hcIKtwiajwd3xQAeQ1Qcw/lBZcQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/9Fm-H8-OUJ-view-UCd-S9-1FY.nib</key>
 		<data>
-		Q6K0rXHsx8f8sAvlkXsdlsRNEBI=
+		UgvQx0fAnQgoMveQ9+AU7VM2MZo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,27 +30,27 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/Month.nib</key>
 		<data>
-		ro4FrLevktE3gASNWWaeLWxOne0=
+		+KoU7UUpvGvaC52lqBSdv+k/jI0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UISplitViewController-DbA-tg-alQ.nib</key>
 		<data>
-		cVeyXZVXW0x3vJTUfvsy45mKtNY=
+		aTXhiIeriPV8hEDN/xfw3DHUECk=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-599-dJ-XD5.nib</key>
 		<data>
-		FitHvtmnjf6I7cbboECzgkKztQ4=
+		e9P0B15yubHvjwhEMESmDlvaa1A=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Week.nib</key>
 		<data>
-		JxfrRRMq3L2BCsNeT86QDDVeju8=
+		gd0ROLC6hg857dBF2S1U2V1NVXg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/bre-Rb-oxX-view-6o3-Qw-2Rt.nib</key>
 		<data>
-		K/kar15yDeHi80Br0/a+Nfrtao8=
+		+TOP3oxSmoAzCEtzt3JKkTIRzIg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/oKB-vm-WEX-view-soy-f0-G7u.nib</key>
 		<data>
-		31XAWuZ4iidiXGnf0vaw/arD+t0=
+		aoBqaOjB8DbDz30qOJEF+bvOAq0=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FIC+fbwhGzvqMNgNBbirmtxtJ7I=
+		kcLKe149NhWeH03+1aRvTcKWHJM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -113,7 +113,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c56ZYvzINkH682GEeCTuuDV+yBM=
+			tmeno74M0dWMNIHiyG2BhweiCz8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eJoThStRUqRvG5jQKJDfDA8nbqE=
+			qcE4Q8a+ADknqOssFdVbt5bawNk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -133,11 +133,11 @@
 		</data>
 		<key>PlugIns/Today's SHP Schedule.appex/Today's SHP Schedule</key>
 		<data>
-		+j70MOsQGVP/ypEiP0v4ncujBcQ=
+		nRplORN74rPIrWZYDJz5X5NqqoM=
 		</data>
 		<key>PlugIns/Today's SHP Schedule.appex/_CodeSignature/CodeResources</key>
 		<data>
-		N0/aYdNpvJ0cqtXSWPOBU7lJM34=
+		LUolg1cyCwA0C9pByCnqy+S90Mk=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -150,11 +150,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6WSlczpVNxJW0QfHK7x+GW7Miio=
+			5wA3iOmT307uMjC3OdAPUWvnqpg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/qILLce6rWOSLiy53pkX6HwFmHxT8ai0dnNmK1SbspM=
+			8h2pKv2SDEpfqlMlrw8/qVUYx+5IztPRWkHXo72AgGg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -172,33 +172,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bqt/naHUFwuIL2ha2KnDNQCpbgc=
+			o13/USZUbHHmwhgji+LTjn9yoII=
 			</data>
 			<key>hash2</key>
 			<data>
-			Tl37+5ww7+qk8+F0AlDjdvHHbpJNLpQv0KKqyIEic3s=
+			tWmL0UL0zufccv71MChSLoirbuh1VMeVH+bfJYO5o9g=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/599-dJ-XD5-view-7ja-gi-Klb.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EHlz9LzXmheNl++fQWiri1ncjHE=
+			hcIKtwiajwd3xQAeQ1Qcw/lBZcQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			hnDXrigWU1adOIjBjm9xMnnYY1l7KZ4Sm5ORrRTZhpw=
+			g1KlC1dqbgBjbWaOcYYUTO+5wsrsSywq/Lq4HKy2eIo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/9Fm-H8-OUJ-view-UCd-S9-1FY.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q6K0rXHsx8f8sAvlkXsdlsRNEBI=
+			UgvQx0fAnQgoMveQ9+AU7VM2MZo=
 			</data>
 			<key>hash2</key>
 			<data>
-			UHV+9rWJh7pksR2c5kT4agkZhb1iPim0u49JkwxblLM=
+			mNrsLj33OdeIGtfDCFbkTJLErZqG8Ky5PFpnKXj0HLM=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -216,66 +216,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ro4FrLevktE3gASNWWaeLWxOne0=
+			+KoU7UUpvGvaC52lqBSdv+k/jI0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Tr4DvIK3cuLvQ9meKMvLEw7ar15oLNYiiGRY+DsLHc=
+			6jstL786VlUL8Edy7G1+xijWl/uUlCXIyTUJOtpgr7U=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UISplitViewController-DbA-tg-alQ.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cVeyXZVXW0x3vJTUfvsy45mKtNY=
+			aTXhiIeriPV8hEDN/xfw3DHUECk=
 			</data>
 			<key>hash2</key>
 			<data>
-			K25HzDRUpnMZWVfFxXqxRS8oUspX+kd1tTTZvA8cP/o=
+			taEETJH+L9SDDXjhL0nEzLlCCrlhQv3kD5VwLINqthc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-599-dJ-XD5.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FitHvtmnjf6I7cbboECzgkKztQ4=
+			e9P0B15yubHvjwhEMESmDlvaa1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			4hXLDXZNVTHwWMw3ny5XqqFyE+c6Y+z6RBTNwKPwFGs=
+			IuZOIJXQhSV7VInSkCAVTDsdGO2BIaT9FkN3SzFxjag=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Week.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JxfrRRMq3L2BCsNeT86QDDVeju8=
+			gd0ROLC6hg857dBF2S1U2V1NVXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ft4sTt47SGt/7GKbPiQbPrUXbX25NEk4ol/dzawSXfc=
+			K8SEfyiP091JI4YZYjxtnEotU51ZYasteeGamSgqq+8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/bre-Rb-oxX-view-6o3-Qw-2Rt.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K/kar15yDeHi80Br0/a+Nfrtao8=
+			+TOP3oxSmoAzCEtzt3JKkTIRzIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			u1MOWDkKQFgwWYt0unRAGtBZ/gKFBB/Gwh5YG641ZyU=
+			QmBAbWWVdGR8s3BReS6yrwtNkcV2xLlQyjK8x0QPzbQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/oKB-vm-WEX-view-soy-f0-G7u.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			31XAWuZ4iidiXGnf0vaw/arD+t0=
+			aoBqaOjB8DbDz30qOJEF+bvOAq0=
 			</data>
 			<key>hash2</key>
 			<data>
-			FdrLmz46BIdQilCMQpj/cMPOk5NKJSLU3hd04F7Tj4A=
+			Djv7DRiS8WBcafL9QXoggulL1Z4DGt/R42rqH9X21qs=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -405,11 +405,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c56ZYvzINkH682GEeCTuuDV+yBM=
+			tmeno74M0dWMNIHiyG2BhweiCz8=
 			</data>
 			<key>hash2</key>
 			<data>
-			nDApvjXfE9A5E6ksncWEz6/chwhpel29ERwGPCjYprs=
+			qAKppPkzq1XvJzhaUh83Yi4ArisZzZIrAkXe5MTWP5w=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -418,11 +418,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eJoThStRUqRvG5jQKJDfDA8nbqE=
+			qcE4Q8a+ADknqOssFdVbt5bawNk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1p93shiJyk8E+e5p9IX2BCJj/0QgdblMCM0PaTUHXwA=
+			N+z0gmjM8H0NXIUVeC3sQF/IGuHwhzo6W8H5BmKH9uc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -442,22 +442,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+j70MOsQGVP/ypEiP0v4ncujBcQ=
+			nRplORN74rPIrWZYDJz5X5NqqoM=
 			</data>
 			<key>hash2</key>
 			<data>
-			jUb5dTORphOgr+xZY9263q9jgYL/C/ugS+8W3khVXwg=
+			NeWTd18+AsdTDADTIrOmoGWmbYWdDQlJQ00zdyYCVKY=
 			</data>
 		</dict>
 		<key>PlugIns/Today's SHP Schedule.appex/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N0/aYdNpvJ0cqtXSWPOBU7lJM34=
+			LUolg1cyCwA0C9pByCnqy+S90Mk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ozj/H/+t8f2zHB3FomhM5xCCN5vvH7i/Pe+kLZlhRkU=
+			CjhTpFYiYZW3n+Q33bLbkLblnPYbGiV6facYJnZBSs0=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

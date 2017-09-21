@@ -14,6 +14,7 @@ provides-dynamic-lookup:
 - "goForwardOneWeek"
 - "numberOfSections"
 - "resetToFirstDayOfWeek"
+- "supportedInterfaceOrientations"
 - "swipeLeftGesture"
 - "swipeRightGesture"
 - "updateUIForNewWeek"
@@ -48,6 +49,7 @@ depends-top-level:
 - "UICollectionViewLayout"
 - !private "UIColor"
 - !private "UIDevice"
+- "UIInterfaceOrientationMask"
 - !private "UISwipeGestureRecognizer"
 - !private "UISwipeGestureRecognizerDirection"
 - !private "UITableViewCell"
@@ -394,6 +396,7 @@ depends-member:
 - !private ["Ps9Equatable", "addGestures"]
 - !private ["Ps9Equatable", "addObserver"]
 - !private ["Ps9Equatable", "addingTimeInterval"]
+- !private ["Ps9Equatable", "all"]
 - !private ["Ps9Equatable", "black"]
 - !private ["Ps9Equatable", "borderColor"]
 - !private ["Ps9Equatable", "borderWidth"]
@@ -447,6 +450,7 @@ depends-member:
 - !private ["Ps9Equatable", "weekday"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "all"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "left"]
 - !private ["Ps25ExpressibleByArrayLiteral", "right"]
@@ -647,6 +651,7 @@ depends-member:
 - ["CSo8NSObject", "UICollectionViewLayout"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIDevice"]
+- ["CSo8NSObject", "UIInterfaceOrientationMask"]
 - !private ["CSo8NSObject", "UISwipeGestureRecognizer"]
 - !private ["CSo8NSObject", "UISwipeGestureRecognizerDirection"]
 - !private ["CSo8NSObject", "UITableViewCell"]
@@ -689,6 +694,7 @@ depends-member:
 - ["CSo8NSObject", "resetToFirstDayOfWeek"]
 - !private ["CSo8NSObject", "rowHeight"]
 - !private ["CSo8NSObject", "scheduleArrayForDay"]
+- ["CSo8NSObject", "supportedInterfaceOrientations"]
 - ["CSo8NSObject", "swipeLeftGesture"]
 - ["CSo8NSObject", "swipeRightGesture"]
 - !private ["CSo8NSObject", "tableView"]
@@ -762,12 +768,14 @@ depends-member:
 - !private ["VCSo14NSNotification4Name", "UIDeviceOrientationDidChange"]
 - !private ["CSo18NotificationCenter", "addObserver"]
 - !private ["CSo18NotificationCenter", "default"]
+- !private ["Ps9OptionSet", "all"]
 - !private ["Ps9OptionSet", "left"]
 - !private ["Ps9OptionSet", "right"]
 - !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - !private ["Ps16RawRepresentable", "UIDeviceOrientationDidChange"]
+- !private ["Ps16RawRepresentable", "all"]
 - !private ["Ps16RawRepresentable", "landscapeLeft"]
 - !private ["Ps16RawRepresentable", "landscapeRight"]
 - !private ["Ps16RawRepresentable", "left"]
@@ -784,6 +792,7 @@ depends-member:
 - !private ["P10Foundation20ReferenceConvertible", "weekday"]
 - !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "row"]
+- !private ["Ps10SetAlgebra", "all"]
 - !private ["Ps10SetAlgebra", "left"]
 - !private ["Ps10SetAlgebra", "right"]
 - !private ["Ps13SignedInteger", "init"]
@@ -892,6 +901,7 @@ depends-member:
 - ["CSo26UICollectionViewController", "UICollectionViewLayout"]
 - !private ["CSo26UICollectionViewController", "UIColor"]
 - !private ["CSo26UICollectionViewController", "UIDevice"]
+- ["CSo26UICollectionViewController", "UIInterfaceOrientationMask"]
 - !private ["CSo26UICollectionViewController", "UISwipeGestureRecognizer"]
 - !private ["CSo26UICollectionViewController", "UISwipeGestureRecognizerDirection"]
 - !private ["CSo26UICollectionViewController", "UITableViewCell"]
@@ -910,6 +920,7 @@ depends-member:
 - ["CSo26UICollectionViewController", "oneDay"]
 - !private ["CSo26UICollectionViewController", "print"]
 - ["CSo26UICollectionViewController", "resetToFirstDayOfWeek"]
+- ["CSo26UICollectionViewController", "supportedInterfaceOrientations"]
 - ["CSo26UICollectionViewController", "swipeLeftGesture"]
 - ["CSo26UICollectionViewController", "swipeRightGesture"]
 - !private ["CSo26UICollectionViewController", "title"]
@@ -1141,6 +1152,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "tableView"]
 - !private ["CSo19UIGestureRecognizer", "direction"]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["VSC26UIInterfaceOrientationMask", "all"]
 - !private ["CSo22UINavigationController", "isToolbarHidden"]
 - !private ["CSo22UINavigationController", "popViewController"]
 - !private ["CSo16UINavigationItem", "hidesBackButton"]
@@ -1159,6 +1171,7 @@ depends-member:
 - ["CSo11UIResponder", "UICollectionViewLayout"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIDevice"]
+- ["CSo11UIResponder", "UIInterfaceOrientationMask"]
 - !private ["CSo11UIResponder", "UISwipeGestureRecognizer"]
 - !private ["CSo11UIResponder", "UISwipeGestureRecognizerDirection"]
 - !private ["CSo11UIResponder", "UITableViewCell"]
@@ -1191,6 +1204,7 @@ depends-member:
 - ["CSo11UIResponder", "resetToFirstDayOfWeek"]
 - !private ["CSo11UIResponder", "rowHeight"]
 - !private ["CSo11UIResponder", "scheduleArrayForDay"]
+- ["CSo11UIResponder", "supportedInterfaceOrientations"]
 - ["CSo11UIResponder", "swipeLeftGesture"]
 - ["CSo11UIResponder", "swipeRightGesture"]
 - !private ["CSo11UIResponder", "tableView"]
@@ -1417,6 +1431,7 @@ depends-member:
 - ["CSo16UIViewController", "UICollectionViewLayout"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIDevice"]
+- ["CSo16UIViewController", "UIInterfaceOrientationMask"]
 - !private ["CSo16UIViewController", "UISwipeGestureRecognizer"]
 - !private ["CSo16UIViewController", "UISwipeGestureRecognizerDirection"]
 - !private ["CSo16UIViewController", "UITableViewCell"]
@@ -1437,6 +1452,7 @@ depends-member:
 - !private ["CSo16UIViewController", "popViewController"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "resetToFirstDayOfWeek"]
+- ["CSo16UIViewController", "supportedInterfaceOrientations"]
 - ["CSo16UIViewController", "swipeLeftGesture"]
 - ["CSo16UIViewController", "swipeRightGesture"]
 - !private ["CSo16UIViewController", "title"]
@@ -1464,6 +1480,7 @@ depends-member:
 - ["C12SHP_Schedule28WeekCollectionViewController", "UICollectionViewLayout"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "UIColor"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "UIDevice"]
+- ["C12SHP_Schedule28WeekCollectionViewController", "UIInterfaceOrientationMask"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "UISwipeGestureRecognizer"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "UISwipeGestureRecognizerDirection"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "UITableViewCell"]
@@ -1483,6 +1500,7 @@ depends-member:
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "oneDay"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "print"]
 - ["C12SHP_Schedule28WeekCollectionViewController", "resetToFirstDayOfWeek"]
+- ["C12SHP_Schedule28WeekCollectionViewController", "supportedInterfaceOrientations"]
 - ["C12SHP_Schedule28WeekCollectionViewController", "swipeLeftGesture"]
 - ["C12SHP_Schedule28WeekCollectionViewController", "swipeRightGesture"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "title"]
@@ -1712,6 +1730,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "CSo19UIGestureRecognizer"
+- !private "VSC26UIInterfaceOrientationMask"
 - !private "CSo22UINavigationController"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
@@ -1778,4 +1797,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
-interface-hash: "ab49110f68475b4a173fab4b1c956dc5"
+interface-hash: "c5ebf79fac1aacadac2ae79d3399d279"

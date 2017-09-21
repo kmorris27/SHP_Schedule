@@ -120,7 +120,7 @@ public class SchoolSchedule {
         
         let now = Date()
         if self.lastTimeCheckedServer.addingTimeInterval(TimeInterval(intervalBetweenUpdates)) > now {
-            print("Interval inbetween updates is < 24 hours")
+            //print("Interval inbetween updates is < 24 hours")
             return false
         }
         if let dateDownloadedFromServer = downloadLastUpdatedDateFromServer() {

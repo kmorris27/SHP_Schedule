@@ -73,18 +73,23 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         }
     }
 
+    override  var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
+        return .all
+    }
     
     func deviceOrientationDidChange() {
         let orientation = UIDevice.current.orientation
         if orientation == .landscapeLeft || orientation == .landscapeRight {
-            print("ROTATED = landscape")
+            print("WEEK ROTATED = landscape")
             
         } else if orientation == .portrait || orientation == .portraitUpsideDown {
             
-            print("ROTATED = portrait")
+            print("WEEK ROTATED = portrait")
             self.navigationController?.isToolbarHidden = false
-            self.navigationController?.popViewController(animated: true)
-
+            if let navCon = self.navigationController {
+                navCon.popViewController(animated: true)
+                print("POP!")
+            }
         } else {
             print("ROTATED = other")
         }

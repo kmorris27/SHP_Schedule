@@ -25,6 +25,7 @@ provides-dynamic-lookup:
 - "smallestFont"
 - "spinner"
 - "startScheduleDownload"
+- "supportedInterfaceOrientations"
 - "todayButtonPressed"
 - "updateUIForNewMonth"
 - "viewDidLoad"
@@ -72,10 +73,10 @@ depends-top-level:
 - !private "UIColor"
 - !private "UIDevice"
 - "UIEdgeInsets"
+- "UIInterfaceOrientationMask"
 - "UISegmentedControl"
 - !private "UISwipeGestureRecognizer"
 - !private "UISwipeGestureRecognizerDirection"
-- !private "UnicodeScalarType"
 - !private "WeekCollectionViewController"
 - !private "assert"
 - !private "print"
@@ -669,6 +670,7 @@ depends-member:
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "addingTimeInterval"]
+- !private ["Ps9Equatable", "all"]
 - !private ["Ps9Equatable", "assert"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "black"]
@@ -766,6 +768,7 @@ depends-member:
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "withSize"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "all"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
 - !private ["Ps25ExpressibleByArrayLiteral", "insert"]
@@ -947,6 +950,7 @@ depends-member:
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UIColor"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UIDevice"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "UIEdgeInsets"]
+- ["C12SHP_Schedule29MonthCollectionViewController", "UIInterfaceOrientationMask"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "UISegmentedControl"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UISwipeGestureRecognizer"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UISwipeGestureRecognizerDirection"]
@@ -980,6 +984,7 @@ depends-member:
 - ["C12SHP_Schedule29MonthCollectionViewController", "spinner"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "startScheduleDownload"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "storyboard"]
+- ["C12SHP_Schedule29MonthCollectionViewController", "supportedInterfaceOrientations"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "title"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "todayButtonPressed"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "toolbarItems"]
@@ -1185,6 +1190,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIDevice"]
 - ["CSo8NSObject", "UIEdgeInsets"]
+- ["CSo8NSObject", "UIInterfaceOrientationMask"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - !private ["CSo8NSObject", "UISwipeGestureRecognizer"]
 - !private ["CSo8NSObject", "UISwipeGestureRecognizerDirection"]
@@ -1260,6 +1266,7 @@ depends-member:
 - ["CSo8NSObject", "startScheduleDownload"]
 - !private ["CSo8NSObject", "stopAnimating"]
 - !private ["CSo8NSObject", "storyboard"]
+- ["CSo8NSObject", "supportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "tintColor"]
@@ -1391,6 +1398,7 @@ depends-member:
 - !private ["CSo18NotificationCenter", "addObserver"]
 - !private ["CSo18NotificationCenter", "default"]
 - !private ["CSo18NotificationCenter", "removeObserver"]
+- !private ["Ps9OptionSet", "all"]
 - !private ["Ps9OptionSet", "left"]
 - !private ["Ps9OptionSet", "right"]
 - !private ["Ps9OptionSet", "valueChanged"]
@@ -1404,6 +1412,7 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "insert"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps16RawRepresentable", "UIDeviceOrientationDidChange"]
+- !private ["Ps16RawRepresentable", "all"]
 - !private ["Ps16RawRepresentable", "landscapeLeft"]
 - !private ["Ps16RawRepresentable", "landscapeRight"]
 - !private ["Ps16RawRepresentable", "left"]
@@ -1482,6 +1491,7 @@ depends-member:
 - !private ["Ps8Sequence", "insert"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Ps10SetAlgebra", "all"]
 - !private ["Ps10SetAlgebra", "left"]
 - !private ["Ps10SetAlgebra", "right"]
 - !private ["Ps10SetAlgebra", "valueChanged"]
@@ -1680,6 +1690,7 @@ depends-member:
 - !private ["CSo26UICollectionViewController", "UIColor"]
 - !private ["CSo26UICollectionViewController", "UIDevice"]
 - ["CSo26UICollectionViewController", "UIEdgeInsets"]
+- ["CSo26UICollectionViewController", "UIInterfaceOrientationMask"]
 - ["CSo26UICollectionViewController", "UISegmentedControl"]
 - !private ["CSo26UICollectionViewController", "UISwipeGestureRecognizer"]
 - !private ["CSo26UICollectionViewController", "UISwipeGestureRecognizerDirection"]
@@ -1712,6 +1723,7 @@ depends-member:
 - ["CSo26UICollectionViewController", "spinner"]
 - ["CSo26UICollectionViewController", "startScheduleDownload"]
 - !private ["CSo26UICollectionViewController", "storyboard"]
+- ["CSo26UICollectionViewController", "supportedInterfaceOrientations"]
 - !private ["CSo26UICollectionViewController", "title"]
 - ["CSo26UICollectionViewController", "todayButtonPressed"]
 - !private ["CSo26UICollectionViewController", "toolbarItems"]
@@ -2128,6 +2140,7 @@ depends-member:
 - !private ["CSo6UIFont", "withSize"]
 - !private ["CSo19UIGestureRecognizer", "direction"]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["VSC26UIInterfaceOrientationMask", "all"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
@@ -2163,6 +2176,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIDevice"]
 - ["CSo11UIResponder", "UIEdgeInsets"]
+- ["CSo11UIResponder", "UIInterfaceOrientationMask"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - !private ["CSo11UIResponder", "UISwipeGestureRecognizer"]
 - !private ["CSo11UIResponder", "UISwipeGestureRecognizerDirection"]
@@ -2220,6 +2234,7 @@ depends-member:
 - ["CSo11UIResponder", "startScheduleDownload"]
 - !private ["CSo11UIResponder", "stopAnimating"]
 - !private ["CSo11UIResponder", "storyboard"]
+- ["CSo11UIResponder", "supportedInterfaceOrientations"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "tintColor"]
@@ -2583,6 +2598,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIDevice"]
 - ["CSo16UIViewController", "UIEdgeInsets"]
+- ["CSo16UIViewController", "UIInterfaceOrientationMask"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - !private ["CSo16UIViewController", "UISwipeGestureRecognizer"]
 - !private ["CSo16UIViewController", "UISwipeGestureRecognizerDirection"]
@@ -2619,6 +2635,7 @@ depends-member:
 - ["CSo16UIViewController", "spinner"]
 - ["CSo16UIViewController", "startScheduleDownload"]
 - !private ["CSo16UIViewController", "storyboard"]
+- ["CSo16UIViewController", "supportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "todayButtonPressed"]
 - !private ["CSo16UIViewController", "toolbar"]
@@ -2979,6 +2996,7 @@ depends-nominal:
 - "PSo11UIFocusItem"
 - !private "CSo6UIFont"
 - !private "CSo19UIGestureRecognizer"
+- !private "VSC26UIInterfaceOrientationMask"
 - !private "CSo7UILabel"
 - !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
@@ -3049,4 +3067,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
-interface-hash: "937abdd045b6c3115e6c1e3d4b5caf52"
+interface-hash: "84c14d41c52ceb17f4989427d453c5ab"

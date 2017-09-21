@@ -180,6 +180,7 @@ SWIFT_CLASS("_TtC12SHP_Schedule22DayTableViewController")
 @property (nonatomic, strong) NSTimer * _Nullable timer;
 - (void)startTimer;
 - (void)stopTimer;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
 - (void)addGestures;
 - (void)rightSwipeGesture;
 - (void)leftSwipeGesture;
@@ -190,6 +191,7 @@ SWIFT_CLASS("_TtC12SHP_Schedule22DayTableViewController")
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)startScheduleDownload;
 - (void)endScheduleDownload;
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)deviceOrientationDidChange;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -233,6 +235,7 @@ SWIFT_CLASS("_TtC12SHP_Schedule29MonthCollectionViewController")
 - (void)resetToFirstDayOfMonth;
 - (void)segmentedControlChanged:(UISegmentedControl * _Nonnull)sender;
 - (void)viewDidLoad;
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)deviceOrientationDidChange;
 - (void)startScheduleDownload;
 - (void)endScheduleDownload;
@@ -315,6 +318,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIColor * _N
 @end
 
 
+@interface UINavigationController (SWIFT_EXTENSION(SHP_Schedule))
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@end
+
+
+@interface UISplitViewController (SWIFT_EXTENSION(SHP_Schedule))
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@end
+
+
 @interface UIViewController (SWIFT_EXTENSION(SHP_Schedule))
 @property (nonatomic, readonly, strong) UIViewController * _Nonnull contentViewController;
 @end
@@ -354,6 +367,7 @@ SWIFT_CLASS("_TtC12SHP_Schedule28WeekCollectionViewController")
 - (void)swipeLeftGesture;
 - (void)updateUIForNewWeek;
 - (void)resetToFirstDayOfWeek;
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (void)deviceOrientationDidChange;
 - (void)didReceiveMemoryWarning;
 - (IBAction)goForwardOneWeek:(UIBarButtonItem * _Nonnull)sender;

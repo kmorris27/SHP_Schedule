@@ -85,7 +85,7 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         schoolSchedule.delegate = self
         collectionView!.dataSource = self
         addGestures()
-        print("Month View Loaded")
+        //print("Month View Loaded")
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -111,12 +111,19 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         
     }
     
+    override  var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
+        return .all
+    }
+    
     func deviceOrientationDidChange() {
         let orientation = UIDevice.current.orientation
         if orientation == .landscapeLeft || orientation == .landscapeRight {
             let weekCollectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "Week") as! WeekCollectionViewController
             weekCollectionViewController.weekForView = monthForView
-            self.navigationController?.pushViewController(weekCollectionViewController, animated: true)
+            if let navCon = self.navigationController {
+                navCon.pushViewController(weekCollectionViewController, animated: true)
+                print("MONTH PUSH")
+            }
             
         } else if orientation == .portrait || orientation == .portraitUpsideDown {
             // do nothing
@@ -261,7 +268,7 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
             { textColor = UIColor.black }
             let dict = schoolSchedule.schedulePeriodDictionary
             let periods = dict?[schedule]
-            print("\(dayForCellView) \(schedule)  \(String(describing: periods?.count))")
+            //print("\(dayForCellView) \(schedule)  \(String(describing: periods?.count))")
             if (periods == nil || periods?.count == 0)
             { backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)}
             else

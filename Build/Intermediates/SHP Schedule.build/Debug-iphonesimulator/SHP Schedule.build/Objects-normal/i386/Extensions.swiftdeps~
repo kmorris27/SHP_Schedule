@@ -2,10 +2,12 @@
 provides-top-level:
 provides-nominal:
 provides-member:
+- ["CSo22UINavigationController", ""]
 - ["SS", ""]
 - ["V10Foundation4Date", ""]
 - ["CSo16UIViewController", ""]
 - ["CSo7UIColor", ""]
+- ["CSo22UINavigationController", "supportedInterfaceOrientations"]
 - ["SS", "toDate"]
 - ["SS", "toDate"]
 - ["SS", "toTime"]
@@ -20,6 +22,7 @@ provides-dynamic-lookup:
 - "contentViewController"
 - "fromHex"
 - "schoolColor"
+- "supportedInterfaceOrientations"
 depends-top-level:
 - !private "&"
 - !private "/"
@@ -35,7 +38,8 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "UIColor"
-- !private "UINavigationController"
+- "UIInterfaceOrientationMask"
+- "UINavigationController"
 - "UIViewController"
 - "UInt32"
 depends-member:
@@ -136,6 +140,7 @@ depends-member:
 - !private ["Ps9Equatable", "CharacterSet"]
 - !private ["Ps9Equatable", "DateFormatter"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "all"]
 - !private ["Ps9Equatable", "calendar"]
 - !private ["Ps9Equatable", "current"]
 - !private ["Ps9Equatable", "date"]
@@ -147,6 +152,7 @@ depends-member:
 - !private ["Ps9Equatable", "trimmingCharacters"]
 - !private ["Ps9Equatable", "visibleViewController"]
 - !private ["Ps9Equatable", "whitespacesAndNewlines"]
+- !private ["Ps25ExpressibleByArrayLiteral", "all"]
 - !private ["Ps25ExpressibleByArrayLiteral", "whitespacesAndNewlines"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "Calendar"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "CharacterSet"]
@@ -227,6 +233,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "trimmingCharacters"]
 - !private ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UIInterfaceOrientationMask"]
 - !private ["CSo8NSObject", "UINavigationController"]
 - ["CSo8NSObject", "UIViewController"]
 - ["CSo8NSObject", "UInt32"]
@@ -238,6 +245,7 @@ depends-member:
 - !private ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "schoolColor"]
 - !private ["CSo8NSObject", "string"]
+- ["CSo8NSObject", "supportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "toDate"]
 - !private ["CSo8NSObject", "trimmingCharacters"]
 - !private ["CSo8NSObject", "visibleViewController"]
@@ -259,10 +267,13 @@ depends-member:
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "toDate"]
 - !private ["CSo8NSString", "trimmingCharacters"]
+- !private ["Ps9OptionSet", "all"]
+- !private ["Ps16RawRepresentable", "all"]
 - !private ["P10Foundation20ReferenceConvertible", "DateFormatter"]
 - !private ["P10Foundation20ReferenceConvertible", "current"]
 - !private ["P10Foundation20ReferenceConvertible", "toString"]
 - !private ["P10Foundation20ReferenceConvertible", "whitespacesAndNewlines"]
+- !private ["Ps10SetAlgebra", "all"]
 - !private ["Ps10SetAlgebra", "whitespacesAndNewlines"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "init"]
@@ -297,17 +308,24 @@ depends-member:
 - ["CSo7UIColor", "schoolColor"]
 - !private ["PSo18UIContentContainer", "visibleViewController"]
 - !private ["PSo18UIFocusEnvironment", "visibleViewController"]
+- !private ["VSC26UIInterfaceOrientationMask", "all"]
+- ["CSo22UINavigationController", "UIInterfaceOrientationMask"]
+- ["CSo22UINavigationController", "supportedInterfaceOrientations"]
 - !private ["CSo22UINavigationController", "visibleViewController"]
+- ["CSo11UIResponder", "UIInterfaceOrientationMask"]
 - !private ["CSo11UIResponder", "UINavigationController"]
 - ["CSo11UIResponder", "UIViewController"]
 - ["CSo11UIResponder", "contentViewController"]
+- ["CSo11UIResponder", "supportedInterfaceOrientations"]
 - !private ["CSo11UIResponder", "visibleViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "visibleViewController"]
 - !private ["PSo16UIStateRestoring", "visibleViewController"]
 - !private ["PSo18UITraitEnvironment", "visibleViewController"]
+- ["CSo16UIViewController", "UIInterfaceOrientationMask"]
 - !private ["CSo16UIViewController", "UINavigationController"]
 - ["CSo16UIViewController", "UIViewController"]
 - ["CSo16UIViewController", "contentViewController"]
+- ["CSo16UIViewController", "supportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "visibleViewController"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
@@ -410,6 +428,8 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "Ps9OptionSet"
+- !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - !private "Ps10SetAlgebra"
 - !private "Ps12SignedNumber"
@@ -421,7 +441,8 @@ depends-nominal:
 - "CSo7UIColor"
 - !private "PSo18UIContentContainer"
 - !private "PSo18UIFocusEnvironment"
-- !private "CSo22UINavigationController"
+- !private "VSC26UIInterfaceOrientationMask"
+- "CSo22UINavigationController"
 - "CSo11UIResponder"
 - !private "PSo30UIResponderStandardEditActions"
 - !private "PSo16UIStateRestoring"
@@ -460,4 +481,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
-interface-hash: "eb50936a86e2e9b2e2d905c429d90f84"
+interface-hash: "42fa31ddf8ab8335d99e13df17c468bd"

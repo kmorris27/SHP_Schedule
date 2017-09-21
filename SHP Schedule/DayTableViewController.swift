@@ -18,12 +18,16 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
     func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
             self?.tableView.reloadData()
-            print("Reloading TableView")
+            //print("Reloading TableView")
         }
     }
     
     func stopTimer() {
         timer?.invalidate()
+    }
+    
+    override var shouldAutorotate: Bool {
+       return true
     }
     
     func addGestures() {
@@ -85,6 +89,7 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         splitViewController?.delegate = self
@@ -124,15 +129,29 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         spinner.stopAnimating()
     }
     
+    override  var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
+            return .all
+    }
+    
     func deviceOrientationDidChange() {
         let orientation = UIDevice.current.orientation
         if orientation == .landscapeLeft || orientation == .landscapeRight {
             let weekCollectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "Week") as! WeekCollectionViewController
             weekCollectionViewController.weekForView = dayForView
-            self.navigationController?.pushViewController(weekCollectionViewController, animated: true)
+            if let navCon = self.navigationController {
+                if navCon.visibleViewController == self {
+                navCon.pushViewController(weekCollectionViewController, animated: true)
+                print("DAY PUSH")
+                }
+            }
             
-        } else if orientation == .portrait || orientation == .portraitUpsideDown {
-            // do nothing
+        } else if orientation == .portrait
+        {
+            print("DAY = PORTRAIT")
+
+        } else if orientation == .portraitUpsideDown {
+            print("DAY = UPSIDE DOWN")
+
         } else {
         }
         
@@ -224,15 +243,17 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         cell.detailTextLabel?.textColor = UIColor.black
         if dayForView?.toDateString() == Date().toDateString()
         {
-            print("CORRECT DAY")
+            //print("CORRECT DAY")
             let currentComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: Date())
             var startComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: (startTimeMil?.toDate(withFormat: "hh:mm"))!)
-            if row > 0
+            if row > 0  // KMo added this
             {
-                startComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: (scheduleArray?[row-1][2].toDate(withFormat: "hh:mm"))!)
+                if let tempDate = (scheduleArray?[row-1][2].toDate(withFormat: "hh:mm")) {
+                startComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: tempDate)
+                }
             }
             let endComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: (endTimeMil?.toDate(withFormat: "hh:mm"))!)
-            print("\(startComponents.hour)--\(currentComponents.hour)--\(endComponents.hour)")
+            //print("\(startComponents.hour)--\(currentComponents.hour)--\(endComponents.hour)")
             let currentMinutes = currentComponents.hour!*60+currentComponents.minute!
             //.hour = 0 when it should be 12
             var startMinutes: Int
@@ -248,9 +269,9 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
                 endMinutes = endComponents.hour!*60 + endComponents.minute!
             }
             
-            print("\(startTime) -- \(endTime)")
-            print("\([startMinutes, currentMinutes, endMinutes])")
-            print("\(startMinutes)")
+            //print("\(startTime) -- \(endTime)")
+            //print("\([startMinutes, currentMinutes, endMinutes])")
+            //print("\(startMinutes)")
             if currentMinutes >= startMinutes+1 && currentMinutes <= endMinutes
             {
                 cell.textLabel?.textColor = UIColor.schoolColor

@@ -25,6 +25,7 @@ provides-dynamic-lookup:
 - "smallestFont"
 - "spinner"
 - "startScheduleDownload"
+- "supportedInterfaceOrientations"
 - "todayButtonPressed"
 - "updateUIForNewMonth"
 - "viewDidLoad"
@@ -72,13 +73,12 @@ depends-top-level:
 - !private "UIColor"
 - !private "UIDevice"
 - "UIEdgeInsets"
+- "UIInterfaceOrientationMask"
 - "UISegmentedControl"
 - !private "UISwipeGestureRecognizer"
 - !private "UISwipeGestureRecognizerDirection"
-- !private "UnicodeScalarType"
 - !private "WeekCollectionViewController"
 - !private "assert"
-- !private "print"
 - !private "||"
 - !private "~="
 depends-member:
@@ -155,7 +155,6 @@ depends-member:
 - !private ["Ps9AnyObject", "periodsForSchedule"]
 - !private ["Ps9AnyObject", "pointSize"]
 - !private ["Ps9AnyObject", "popViewController"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "pushViewController"]
 - !private ["Ps9AnyObject", "register"]
 - !private ["Ps9AnyObject", "reloadData"]
@@ -309,7 +308,6 @@ depends-member:
 - !private ["Ps7CVarArg", "periodsForSchedule"]
 - !private ["Ps7CVarArg", "pointSize"]
 - !private ["Ps7CVarArg", "popViewController"]
-- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "pushViewController"]
 - !private ["Ps7CVarArg", "register"]
 - !private ["Ps7CVarArg", "reloadData"]
@@ -444,7 +442,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "periodsForSchedule"]
 - !private ["Ps28CustomDebugStringConvertible", "pointSize"]
 - !private ["Ps28CustomDebugStringConvertible", "popViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "register"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
@@ -590,7 +587,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "periodsForSchedule"]
 - !private ["Ps23CustomStringConvertible", "pointSize"]
 - !private ["Ps23CustomStringConvertible", "popViewController"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "pushViewController"]
 - !private ["Ps23CustomStringConvertible", "register"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
@@ -669,6 +665,7 @@ depends-member:
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "addingTimeInterval"]
+- !private ["Ps9Equatable", "all"]
 - !private ["Ps9Equatable", "assert"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "black"]
@@ -723,7 +720,6 @@ depends-member:
 - !private ["Ps9Equatable", "popViewController"]
 - !private ["Ps9Equatable", "portrait"]
 - !private ["Ps9Equatable", "portraitUpsideDown"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "pushViewController"]
 - !private ["Ps9Equatable", "register"]
 - !private ["Ps9Equatable", "reloadData"]
@@ -766,6 +762,7 @@ depends-member:
 - !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "withSize"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "all"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
 - !private ["Ps25ExpressibleByArrayLiteral", "insert"]
@@ -868,7 +865,6 @@ depends-member:
 - !private ["Ps8Hashable", "popViewController"]
 - !private ["Ps8Hashable", "portrait"]
 - !private ["Ps8Hashable", "portraitUpsideDown"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "pushViewController"]
 - !private ["Ps8Hashable", "register"]
 - !private ["Ps8Hashable", "reloadData"]
@@ -947,6 +943,7 @@ depends-member:
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UIColor"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UIDevice"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "UIEdgeInsets"]
+- ["C12SHP_Schedule29MonthCollectionViewController", "UIInterfaceOrientationMask"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "UISegmentedControl"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UISwipeGestureRecognizer"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "UISwipeGestureRecognizerDirection"]
@@ -969,7 +966,6 @@ depends-member:
 - ["C12SHP_Schedule29MonthCollectionViewController", "offsetForFirstDayOfMonth"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "oneDay"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "periodsForSchedule"]
-- !private ["C12SHP_Schedule29MonthCollectionViewController", "print"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "resetToFirstDayOfMonth"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "rightSwipeGesture"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "scheduleArray"]
@@ -980,6 +976,7 @@ depends-member:
 - ["C12SHP_Schedule29MonthCollectionViewController", "spinner"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "startScheduleDownload"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "storyboard"]
+- ["C12SHP_Schedule29MonthCollectionViewController", "supportedInterfaceOrientations"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "title"]
 - ["C12SHP_Schedule29MonthCollectionViewController", "todayButtonPressed"]
 - !private ["C12SHP_Schedule29MonthCollectionViewController", "toolbarItems"]
@@ -1054,7 +1051,6 @@ depends-member:
 - !private ["PSo8NSCoding", "periodLabel"]
 - !private ["PSo8NSCoding", "periodsForSchedule"]
 - !private ["PSo8NSCoding", "popViewController"]
-- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "register"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -1135,7 +1131,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "oneDay"]
 - !private ["PSo26NSExtensionRequestHandling", "periodsForSchedule"]
 - !private ["PSo26NSExtensionRequestHandling", "popViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "resetToFirstDayOfMonth"]
 - !private ["PSo26NSExtensionRequestHandling", "rightSwipeGesture"]
@@ -1185,6 +1180,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIDevice"]
 - ["CSo8NSObject", "UIEdgeInsets"]
+- ["CSo8NSObject", "UIInterfaceOrientationMask"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - !private ["CSo8NSObject", "UISwipeGestureRecognizer"]
 - !private ["CSo8NSObject", "UISwipeGestureRecognizerDirection"]
@@ -1239,7 +1235,6 @@ depends-member:
 - ["CSo8NSObject", "periodsForSchedule"]
 - !private ["CSo8NSObject", "pointSize"]
 - !private ["CSo8NSObject", "popViewController"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "register"]
 - !private ["CSo8NSObject", "reloadData"]
@@ -1260,6 +1255,7 @@ depends-member:
 - ["CSo8NSObject", "startScheduleDownload"]
 - !private ["CSo8NSObject", "stopAnimating"]
 - !private ["CSo8NSObject", "storyboard"]
+- ["CSo8NSObject", "supportedInterfaceOrientations"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "tintColor"]
@@ -1344,7 +1340,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "periodsForSchedule"]
 - !private ["PSo16NSObjectProtocol", "pointSize"]
 - !private ["PSo16NSObjectProtocol", "popViewController"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "register"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
@@ -1391,6 +1386,7 @@ depends-member:
 - !private ["CSo18NotificationCenter", "addObserver"]
 - !private ["CSo18NotificationCenter", "default"]
 - !private ["CSo18NotificationCenter", "removeObserver"]
+- !private ["Ps9OptionSet", "all"]
 - !private ["Ps9OptionSet", "left"]
 - !private ["Ps9OptionSet", "right"]
 - !private ["Ps9OptionSet", "valueChanged"]
@@ -1404,6 +1400,7 @@ depends-member:
 - !private ["Ps26RangeReplaceableCollection", "insert"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps16RawRepresentable", "UIDeviceOrientationDidChange"]
+- !private ["Ps16RawRepresentable", "all"]
 - !private ["Ps16RawRepresentable", "landscapeLeft"]
 - !private ["Ps16RawRepresentable", "landscapeRight"]
 - !private ["Ps16RawRepresentable", "left"]
@@ -1462,7 +1459,6 @@ depends-member:
 - !private ["P12SHP_Schedule22SchoolScheduleDelegate", "offsetForFirstDayOfMonth"]
 - !private ["P12SHP_Schedule22SchoolScheduleDelegate", "oneDay"]
 - !private ["P12SHP_Schedule22SchoolScheduleDelegate", "periodsForSchedule"]
-- !private ["P12SHP_Schedule22SchoolScheduleDelegate", "print"]
 - !private ["P12SHP_Schedule22SchoolScheduleDelegate", "resetToFirstDayOfMonth"]
 - !private ["P12SHP_Schedule22SchoolScheduleDelegate", "rightSwipeGesture"]
 - !private ["P12SHP_Schedule22SchoolScheduleDelegate", "scheduleArray"]
@@ -1482,6 +1478,7 @@ depends-member:
 - !private ["Ps8Sequence", "insert"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
+- !private ["Ps10SetAlgebra", "all"]
 - !private ["Ps10SetAlgebra", "left"]
 - !private ["Ps10SetAlgebra", "right"]
 - !private ["Ps10SetAlgebra", "valueChanged"]
@@ -1605,7 +1602,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "periodLabel"]
 - !private ["PSo21UIAppearanceContainer", "periodsForSchedule"]
 - !private ["PSo21UIAppearanceContainer", "popViewController"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - !private ["PSo21UIAppearanceContainer", "register"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -1680,6 +1676,7 @@ depends-member:
 - !private ["CSo26UICollectionViewController", "UIColor"]
 - !private ["CSo26UICollectionViewController", "UIDevice"]
 - ["CSo26UICollectionViewController", "UIEdgeInsets"]
+- ["CSo26UICollectionViewController", "UIInterfaceOrientationMask"]
 - ["CSo26UICollectionViewController", "UISegmentedControl"]
 - !private ["CSo26UICollectionViewController", "UISwipeGestureRecognizer"]
 - !private ["CSo26UICollectionViewController", "UISwipeGestureRecognizerDirection"]
@@ -1701,7 +1698,6 @@ depends-member:
 - ["CSo26UICollectionViewController", "offsetForFirstDayOfMonth"]
 - ["CSo26UICollectionViewController", "oneDay"]
 - ["CSo26UICollectionViewController", "periodsForSchedule"]
-- !private ["CSo26UICollectionViewController", "print"]
 - ["CSo26UICollectionViewController", "resetToFirstDayOfMonth"]
 - ["CSo26UICollectionViewController", "rightSwipeGesture"]
 - ["CSo26UICollectionViewController", "scheduleArray"]
@@ -1712,6 +1708,7 @@ depends-member:
 - ["CSo26UICollectionViewController", "spinner"]
 - ["CSo26UICollectionViewController", "startScheduleDownload"]
 - !private ["CSo26UICollectionViewController", "storyboard"]
+- ["CSo26UICollectionViewController", "supportedInterfaceOrientations"]
 - !private ["CSo26UICollectionViewController", "title"]
 - ["CSo26UICollectionViewController", "todayButtonPressed"]
 - !private ["CSo26UICollectionViewController", "toolbarItems"]
@@ -1756,7 +1753,6 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "offsetForFirstDayOfMonth"]
 - !private ["PSo26UICollectionViewDataSource", "oneDay"]
 - !private ["PSo26UICollectionViewDataSource", "periodsForSchedule"]
-- !private ["PSo26UICollectionViewDataSource", "print"]
 - !private ["PSo26UICollectionViewDataSource", "resetToFirstDayOfMonth"]
 - !private ["PSo26UICollectionViewDataSource", "rightSwipeGesture"]
 - !private ["PSo26UICollectionViewDataSource", "scheduleArray"]
@@ -1809,7 +1805,6 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "offsetForFirstDayOfMonth"]
 - !private ["PSo24UICollectionViewDelegate", "oneDay"]
 - !private ["PSo24UICollectionViewDelegate", "periodsForSchedule"]
-- !private ["PSo24UICollectionViewDelegate", "print"]
 - !private ["PSo24UICollectionViewDelegate", "resetToFirstDayOfMonth"]
 - !private ["PSo24UICollectionViewDelegate", "rightSwipeGesture"]
 - !private ["PSo24UICollectionViewDelegate", "scheduleArray"]
@@ -1860,7 +1855,6 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "offsetForFirstDayOfMonth"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "oneDay"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "periodsForSchedule"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "print"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "resetToFirstDayOfMonth"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "rightSwipeGesture"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "scheduleArray"]
@@ -1927,7 +1921,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "oneDay"]
 - !private ["PSo18UIContentContainer", "periodsForSchedule"]
 - !private ["PSo18UIContentContainer", "popViewController"]
-- !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "pushViewController"]
 - !private ["PSo18UIContentContainer", "resetToFirstDayOfMonth"]
 - !private ["PSo18UIContentContainer", "rightSwipeGesture"]
@@ -2070,7 +2063,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "periodLabel"]
 - !private ["PSo18UIFocusEnvironment", "periodsForSchedule"]
 - !private ["PSo18UIFocusEnvironment", "popViewController"]
-- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "pushViewController"]
 - !private ["PSo18UIFocusEnvironment", "register"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -2128,6 +2120,7 @@ depends-member:
 - !private ["CSo6UIFont", "withSize"]
 - !private ["CSo19UIGestureRecognizer", "direction"]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["VSC26UIInterfaceOrientationMask", "all"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
@@ -2163,6 +2156,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIDevice"]
 - ["CSo11UIResponder", "UIEdgeInsets"]
+- ["CSo11UIResponder", "UIInterfaceOrientationMask"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - !private ["CSo11UIResponder", "UISwipeGestureRecognizer"]
 - !private ["CSo11UIResponder", "UISwipeGestureRecognizerDirection"]
@@ -2202,7 +2196,6 @@ depends-member:
 - !private ["CSo11UIResponder", "periodLabel"]
 - ["CSo11UIResponder", "periodsForSchedule"]
 - !private ["CSo11UIResponder", "popViewController"]
-- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "pushViewController"]
 - !private ["CSo11UIResponder", "register"]
 - !private ["CSo11UIResponder", "reloadData"]
@@ -2220,6 +2213,7 @@ depends-member:
 - ["CSo11UIResponder", "startScheduleDownload"]
 - !private ["CSo11UIResponder", "stopAnimating"]
 - !private ["CSo11UIResponder", "storyboard"]
+- ["CSo11UIResponder", "supportedInterfaceOrientations"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "tintColor"]
@@ -2286,7 +2280,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "periodLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "periodsForSchedule"]
 - !private ["PSo30UIResponderStandardEditActions", "popViewController"]
-- !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "register"]
 - !private ["PSo30UIResponderStandardEditActions", "reloadData"]
@@ -2359,7 +2352,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "offsetForFirstDayOfMonth"]
 - !private ["PSo20UIScrollViewDelegate", "oneDay"]
 - !private ["PSo20UIScrollViewDelegate", "periodsForSchedule"]
-- !private ["PSo20UIScrollViewDelegate", "print"]
 - !private ["PSo20UIScrollViewDelegate", "resetToFirstDayOfMonth"]
 - !private ["PSo20UIScrollViewDelegate", "rightSwipeGesture"]
 - !private ["PSo20UIScrollViewDelegate", "scheduleArray"]
@@ -2420,7 +2412,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "oneDay"]
 - !private ["PSo16UIStateRestoring", "periodsForSchedule"]
 - !private ["PSo16UIStateRestoring", "popViewController"]
-- !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "pushViewController"]
 - !private ["PSo16UIStateRestoring", "resetToFirstDayOfMonth"]
 - !private ["PSo16UIStateRestoring", "rightSwipeGesture"]
@@ -2503,7 +2494,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "periodLabel"]
 - !private ["PSo18UITraitEnvironment", "periodsForSchedule"]
 - !private ["PSo18UITraitEnvironment", "popViewController"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "pushViewController"]
 - !private ["PSo18UITraitEnvironment", "register"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -2583,6 +2573,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIDevice"]
 - ["CSo16UIViewController", "UIEdgeInsets"]
+- ["CSo16UIViewController", "UIInterfaceOrientationMask"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - !private ["CSo16UIViewController", "UISwipeGestureRecognizer"]
 - !private ["CSo16UIViewController", "UISwipeGestureRecognizerDirection"]
@@ -2607,7 +2598,6 @@ depends-member:
 - ["CSo16UIViewController", "oneDay"]
 - ["CSo16UIViewController", "periodsForSchedule"]
 - !private ["CSo16UIViewController", "popViewController"]
-- !private ["CSo16UIViewController", "print"]
 - !private ["CSo16UIViewController", "pushViewController"]
 - ["CSo16UIViewController", "resetToFirstDayOfMonth"]
 - ["CSo16UIViewController", "rightSwipeGesture"]
@@ -2619,6 +2609,7 @@ depends-member:
 - ["CSo16UIViewController", "spinner"]
 - ["CSo16UIViewController", "startScheduleDownload"]
 - !private ["CSo16UIViewController", "storyboard"]
+- ["CSo16UIViewController", "supportedInterfaceOrientations"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "todayButtonPressed"]
 - !private ["CSo16UIViewController", "toolbar"]
@@ -2774,7 +2765,6 @@ depends-member:
 - !private ["Ps9_Hashable", "popViewController"]
 - !private ["Ps9_Hashable", "portrait"]
 - !private ["Ps9_Hashable", "portraitUpsideDown"]
-- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "pushViewController"]
 - !private ["Ps9_Hashable", "register"]
 - !private ["Ps9_Hashable", "reloadData"]
@@ -2979,6 +2969,7 @@ depends-nominal:
 - "PSo11UIFocusItem"
 - !private "CSo6UIFont"
 - !private "CSo19UIGestureRecognizer"
+- !private "VSC26UIInterfaceOrientationMask"
 - !private "CSo7UILabel"
 - !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
@@ -3049,4 +3040,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
-interface-hash: "937abdd045b6c3115e6c1e3d4b5caf52"
+interface-hash: "84c14d41c52ceb17f4989427d453c5ab"

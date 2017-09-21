@@ -18,11 +18,13 @@ provides-dynamic-lookup:
 - "prepare"
 - "rightSwipeGesture"
 - "segmentedControlChanged"
+- "shouldAutorotate"
 - "spinner"
 - "splitViewController"
 - "startScheduleDownload"
 - "startTimer"
 - "stopTimer"
+- "supportedInterfaceOrientations"
 - "tableView"
 - "timer"
 - "todayButtonPressed"
@@ -66,6 +68,7 @@ depends-top-level:
 - "UIBarButtonItem"
 - !private "UIColor"
 - !private "UIDevice"
+- "UIInterfaceOrientationMask"
 - "UISegmentedControl"
 - "UISplitViewController"
 - "UISplitViewControllerDelegate"
@@ -179,6 +182,7 @@ depends-member:
 - !private ["Ps9AnyObject", "view"]
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - !private ["Ps9AnyObject", "viewWillAppear"]
+- !private ["Ps9AnyObject", "visibleViewController"]
 - !private ["Ps9AnyObject", "weekForView"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "count"]
@@ -307,6 +311,7 @@ depends-member:
 - !private ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "viewDidLoad"]
 - !private ["Ps7CVarArg", "viewWillAppear"]
+- !private ["Ps7CVarArg", "visibleViewController"]
 - !private ["Ps7CVarArg", "weekForView"]
 - ["Ps7CVarArg", ""]
 - !private ["V10Foundation8Calendar", "Component"]
@@ -438,6 +443,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - !private ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
+- !private ["Ps28CustomDebugStringConvertible", "visibleViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "weekForView"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -575,6 +581,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - !private ["Ps23CustomStringConvertible", "viewWillAppear"]
+- !private ["Ps23CustomStringConvertible", "visibleViewController"]
 - !private ["Ps23CustomStringConvertible", "weekForView"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["V10Foundation4Date", "addTimeInterval"]
@@ -604,6 +611,7 @@ depends-member:
 - ["C12SHP_Schedule22DayTableViewController", "UIBarButtonItem"]
 - !private ["C12SHP_Schedule22DayTableViewController", "UIColor"]
 - !private ["C12SHP_Schedule22DayTableViewController", "UIDevice"]
+- ["C12SHP_Schedule22DayTableViewController", "UIInterfaceOrientationMask"]
 - ["C12SHP_Schedule22DayTableViewController", "UISegmentedControl"]
 - ["C12SHP_Schedule22DayTableViewController", "UISplitViewController"]
 - ["C12SHP_Schedule22DayTableViewController", "UIStoryboardSegue"]
@@ -636,6 +644,7 @@ depends-member:
 - !private ["C12SHP_Schedule22DayTableViewController", "scheduleArrayForDay"]
 - ["C12SHP_Schedule22DayTableViewController", "schoolSchedule"]
 - ["C12SHP_Schedule22DayTableViewController", "segmentedControlChanged"]
+- ["C12SHP_Schedule22DayTableViewController", "shouldAutorotate"]
 - !private ["C12SHP_Schedule22DayTableViewController", "shouldHideBeginningZPeriod"]
 - ["C12SHP_Schedule22DayTableViewController", "spinner"]
 - ["C12SHP_Schedule22DayTableViewController", "splitViewController"]
@@ -645,6 +654,7 @@ depends-member:
 - ["C12SHP_Schedule22DayTableViewController", "startTimer"]
 - ["C12SHP_Schedule22DayTableViewController", "stopTimer"]
 - !private ["C12SHP_Schedule22DayTableViewController", "storyboard"]
+- ["C12SHP_Schedule22DayTableViewController", "supportedInterfaceOrientations"]
 - ["C12SHP_Schedule22DayTableViewController", "tableView"]
 - ["C12SHP_Schedule22DayTableViewController", "targetDisplayModeForAction"]
 - ["C12SHP_Schedule22DayTableViewController", "targetDisplayModeForActionInSplitViewController"]
@@ -686,6 +696,7 @@ depends-member:
 - !private ["Ps9Equatable", "addTarget"]
 - !private ["Ps9Equatable", "addTimeInterval"]
 - !private ["Ps9Equatable", "addingTimeInterval"]
+- !private ["Ps9Equatable", "all"]
 - !private ["Ps9Equatable", "black"]
 - !private ["Ps9Equatable", "bringSubview"]
 - !private ["Ps9Equatable", "center"]
@@ -771,10 +782,12 @@ depends-member:
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewDidLoad"]
 - !private ["Ps9Equatable", "viewWillAppear"]
+- !private ["Ps9Equatable", "visibleViewController"]
 - !private ["Ps9Equatable", "weekForView"]
 - !private ["Ps9Equatable", "weekday"]
 - ["Ps9Equatable", "whiteLarge"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "all"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "insert"]
 - !private ["Ps25ExpressibleByArrayLiteral", "left"]
@@ -910,6 +923,7 @@ depends-member:
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewDidLoad"]
 - !private ["Ps8Hashable", "viewWillAppear"]
+- !private ["Ps8Hashable", "visibleViewController"]
 - !private ["Ps8Hashable", "weekForView"]
 - !private ["Ps8Hashable", "weekday"]
 - ["Ps8Hashable", "whiteLarge"]
@@ -1018,6 +1032,7 @@ depends-member:
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - !private ["PSo8NSCoding", "viewWillAppear"]
+- !private ["PSo8NSCoding", "visibleViewController"]
 - !private ["PSo8NSCoding", "weekForView"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "Name"]
@@ -1086,6 +1101,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - !private ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
+- !private ["PSo26NSExtensionRequestHandling", "visibleViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "weekForView"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "characters"]
@@ -1114,6 +1130,7 @@ depends-member:
 - ["CSo8NSObject", "UIBarButtonItem"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIDevice"]
+- ["CSo8NSObject", "UIInterfaceOrientationMask"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - ["CSo8NSObject", "UISplitViewController"]
 - ["CSo8NSObject", "UIStoryboardSegue"]
@@ -1177,6 +1194,7 @@ depends-member:
 - ["CSo8NSObject", "segmentedControlChanged"]
 - !private ["CSo8NSObject", "selectedSegmentIndex"]
 - !private ["CSo8NSObject", "selectionStyle"]
+- ["CSo8NSObject", "shouldAutorotate"]
 - ["CSo8NSObject", "shouldHideBeginningZPeriod"]
 - ["CSo8NSObject", "spinner"]
 - ["CSo8NSObject", "splitViewController"]
@@ -1188,6 +1206,7 @@ depends-member:
 - !private ["CSo8NSObject", "stopAnimating"]
 - ["CSo8NSObject", "stopTimer"]
 - !private ["CSo8NSObject", "storyboard"]
+- ["CSo8NSObject", "supportedInterfaceOrientations"]
 - ["CSo8NSObject", "tableView"]
 - ["CSo8NSObject", "targetDisplayModeForAction"]
 - ["CSo8NSObject", "targetDisplayModeForActionInSplitViewController"]
@@ -1205,6 +1224,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
+- !private ["CSo8NSObject", "visibleViewController"]
 - !private ["CSo8NSObject", "weekForView"]
 - !private ["PSo16NSObjectProtocol", "Calendar"]
 - !private ["PSo16NSObjectProtocol", "Date"]
@@ -1299,6 +1319,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "visibleViewController"]
 - !private ["PSo16NSObjectProtocol", "weekForView"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "black"]
@@ -1316,6 +1337,7 @@ depends-member:
 - !private ["CSo18NotificationCenter", "addObserver"]
 - !private ["CSo18NotificationCenter", "default"]
 - !private ["CSo18NotificationCenter", "removeObserver"]
+- !private ["Ps9OptionSet", "all"]
 - !private ["Ps9OptionSet", "left"]
 - !private ["Ps9OptionSet", "right"]
 - !private ["Ps9OptionSet", "valueChanged"]
@@ -1331,6 +1353,7 @@ depends-member:
 - !private ["Vs21RangeReplaceableSlice", "subscript"]
 - !private ["Vs21RangeReplaceableSlice", "toDate"]
 - !private ["Ps16RawRepresentable", "UIDeviceOrientationDidChange"]
+- !private ["Ps16RawRepresentable", "all"]
 - !private ["Ps16RawRepresentable", "landscapeLeft"]
 - !private ["Ps16RawRepresentable", "landscapeRight"]
 - !private ["Ps16RawRepresentable", "left"]
@@ -1412,6 +1435,7 @@ depends-member:
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["Ps8Sequence", "toDate"]
+- !private ["Ps10SetAlgebra", "all"]
 - !private ["Ps10SetAlgebra", "left"]
 - !private ["Ps10SetAlgebra", "right"]
 - !private ["Ps10SetAlgebra", "valueChanged"]
@@ -1550,6 +1574,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "view"]
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - !private ["PSo21UIAppearanceContainer", "viewWillAppear"]
+- !private ["PSo21UIAppearanceContainer", "visibleViewController"]
 - !private ["PSo21UIAppearanceContainer", "weekForView"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo15UIBarButtonItem", "init"]
@@ -1623,6 +1648,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "view"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
 - !private ["PSo18UIContentContainer", "viewWillAppear"]
+- !private ["PSo18UIContentContainer", "visibleViewController"]
 - !private ["PSo18UIContentContainer", "weekForView"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
@@ -1749,6 +1775,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "view"]
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - !private ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- !private ["PSo18UIFocusEnvironment", "visibleViewController"]
 - !private ["PSo18UIFocusEnvironment", "weekForView"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addGestureRecognizer"]
@@ -1774,10 +1801,12 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "detailTextLabel"]
 - !private ["PSo27UIGestureRecognizerDelegate", "selectionStyle"]
 - !private ["PSo27UIGestureRecognizerDelegate", "textLabel"]
+- !private ["VSC26UIInterfaceOrientationMask", "all"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
 - !private ["CSo22UINavigationController", "isToolbarHidden"]
 - !private ["CSo22UINavigationController", "pushViewController"]
+- !private ["CSo22UINavigationController", "visibleViewController"]
 - ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "Calendar"]
@@ -1798,6 +1827,7 @@ depends-member:
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIDevice"]
+- ["CSo11UIResponder", "UIInterfaceOrientationMask"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - ["CSo11UIResponder", "UISplitViewController"]
 - ["CSo11UIResponder", "UIStoryboardSegue"]
@@ -1846,6 +1876,7 @@ depends-member:
 - ["CSo11UIResponder", "segmentedControlChanged"]
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
 - !private ["CSo11UIResponder", "selectionStyle"]
+- ["CSo11UIResponder", "shouldAutorotate"]
 - ["CSo11UIResponder", "shouldHideBeginningZPeriod"]
 - ["CSo11UIResponder", "spinner"]
 - ["CSo11UIResponder", "splitViewController"]
@@ -1857,6 +1888,7 @@ depends-member:
 - !private ["CSo11UIResponder", "stopAnimating"]
 - ["CSo11UIResponder", "stopTimer"]
 - !private ["CSo11UIResponder", "storyboard"]
+- ["CSo11UIResponder", "supportedInterfaceOrientations"]
 - ["CSo11UIResponder", "tableView"]
 - ["CSo11UIResponder", "targetDisplayModeForAction"]
 - ["CSo11UIResponder", "targetDisplayModeForActionInSplitViewController"]
@@ -1872,6 +1904,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
+- !private ["CSo11UIResponder", "visibleViewController"]
 - !private ["CSo11UIResponder", "weekForView"]
 - !private ["PSo30UIResponderStandardEditActions", "Calendar"]
 - !private ["PSo30UIResponderStandardEditActions", "Date"]
@@ -1948,6 +1981,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "visibleViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "weekForView"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["CSo12UIScrollView", "center"]
@@ -2122,6 +2156,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "view"]
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "viewWillAppear"]
+- !private ["PSo16UIStateRestoring", "visibleViewController"]
 - !private ["PSo16UIStateRestoring", "weekForView"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
@@ -2159,6 +2194,7 @@ depends-member:
 - ["CSo21UITableViewController", "UIBarButtonItem"]
 - !private ["CSo21UITableViewController", "UIColor"]
 - !private ["CSo21UITableViewController", "UIDevice"]
+- ["CSo21UITableViewController", "UIInterfaceOrientationMask"]
 - ["CSo21UITableViewController", "UISegmentedControl"]
 - ["CSo21UITableViewController", "UISplitViewController"]
 - ["CSo21UITableViewController", "UIStoryboardSegue"]
@@ -2190,6 +2226,7 @@ depends-member:
 - ["CSo21UITableViewController", "scheduleArrayForDay"]
 - ["CSo21UITableViewController", "schoolSchedule"]
 - ["CSo21UITableViewController", "segmentedControlChanged"]
+- ["CSo21UITableViewController", "shouldAutorotate"]
 - ["CSo21UITableViewController", "shouldHideBeginningZPeriod"]
 - ["CSo21UITableViewController", "spinner"]
 - ["CSo21UITableViewController", "splitViewController"]
@@ -2199,6 +2236,7 @@ depends-member:
 - ["CSo21UITableViewController", "startTimer"]
 - ["CSo21UITableViewController", "stopTimer"]
 - !private ["CSo21UITableViewController", "storyboard"]
+- ["CSo21UITableViewController", "supportedInterfaceOrientations"]
 - ["CSo21UITableViewController", "tableView"]
 - ["CSo21UITableViewController", "targetDisplayModeForAction"]
 - ["CSo21UITableViewController", "targetDisplayModeForActionInSplitViewController"]
@@ -2394,6 +2432,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "view"]
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - !private ["PSo18UITraitEnvironment", "viewWillAppear"]
+- !private ["PSo18UITraitEnvironment", "visibleViewController"]
 - !private ["PSo18UITraitEnvironment", "weekForView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addGestureRecognizer"]
@@ -2434,6 +2473,7 @@ depends-member:
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIDevice"]
+- ["CSo16UIViewController", "UIInterfaceOrientationMask"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - ["CSo16UIViewController", "UISplitViewController"]
 - ["CSo16UIViewController", "UIStoryboardSegue"]
@@ -2471,6 +2511,7 @@ depends-member:
 - ["CSo16UIViewController", "scheduleArrayForDay"]
 - ["CSo16UIViewController", "schoolSchedule"]
 - ["CSo16UIViewController", "segmentedControlChanged"]
+- ["CSo16UIViewController", "shouldAutorotate"]
 - ["CSo16UIViewController", "shouldHideBeginningZPeriod"]
 - ["CSo16UIViewController", "spinner"]
 - ["CSo16UIViewController", "splitViewController"]
@@ -2480,6 +2521,7 @@ depends-member:
 - ["CSo16UIViewController", "startTimer"]
 - ["CSo16UIViewController", "stopTimer"]
 - !private ["CSo16UIViewController", "storyboard"]
+- ["CSo16UIViewController", "supportedInterfaceOrientations"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "targetDisplayModeForAction"]
 - ["CSo16UIViewController", "targetDisplayModeForActionInSplitViewController"]
@@ -2491,6 +2533,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
+- !private ["CSo16UIViewController", "visibleViewController"]
 - !private ["CSo16UIViewController", "weekForView"]
 - !private ["C12SHP_Schedule28WeekCollectionViewController", "weekForView"]
 - !private ["Ps14_ArrayProtocol", "count"]
@@ -2667,6 +2710,7 @@ depends-member:
 - !private ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "viewDidLoad"]
 - !private ["Ps9_Hashable", "viewWillAppear"]
+- !private ["Ps9_Hashable", "visibleViewController"]
 - !private ["Ps9_Hashable", "weekForView"]
 - !private ["Ps9_Hashable", "weekday"]
 - ["Ps9_Hashable", "whiteLarge"]
@@ -2818,6 +2862,7 @@ depends-nominal:
 - "PSo11UIFocusItem"
 - !private "CSo19UIGestureRecognizer"
 - !private "PSo27UIGestureRecognizerDelegate"
+- !private "VSC26UIInterfaceOrientationMask"
 - !private "CSo7UILabel"
 - !private "CSo22UINavigationController"
 - "CSo11UIResponder"
@@ -2887,4 +2932,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/SwiftOnoneSupport.swiftmodule"
-interface-hash: "01b7c1ccbea386cdde05d2a59980318e"
+interface-hash: "871a66de7ae32c8a046394500201e1d4"
