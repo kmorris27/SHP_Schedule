@@ -19,6 +19,13 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        layout.sectionInset.left = 0;
+        layout.sectionInset.right = 0;
+
+        self.collectionView?.collectionViewLayout = layout
          
         self.navigationItem.hidesBackButton = true
         self.navigationController?.isToolbarHidden = true
@@ -111,11 +118,11 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfItemsPerRow = 5
-        let width = Int(collectionView.bounds.width  / CGFloat(numberOfItemsPerRow))
-        let height = Int(collectionView.bounds.height)
+        let width = CGFloat(collectionView.bounds.width  / CGFloat(numberOfItemsPerRow))
+        let height = CGFloat(collectionView.bounds.height)
         
         return CGSize(width: width, height: height)
-    }
+        }
     
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {

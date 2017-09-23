@@ -165,8 +165,10 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
     }
     
     func endScheduleDownload() {
+        DispatchQueue.main.async {
         self.collectionView?.reloadData()
-        spinner.stopAnimating()
+        self.spinner.stopAnimating()
+        }
     }
     
     
@@ -303,7 +305,7 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
             {
                 if dayShownInSplitView!.toDateString() == dayForCellView.toDateString()
                 {
-                    backgroundColor = UIColor.schoolColor
+                    backgroundColor = UIColor.schoolColor.withAlphaComponent(0.75)
                 }
             }
             cell.numberLabel.textColor = textColor

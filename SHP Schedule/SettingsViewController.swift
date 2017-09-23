@@ -38,7 +38,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         
         latestPublishedLabel.font = informationLabel.font
         latestSyncLabel.font = informationLabel.font
-        
+        self.navigationController?.isToolbarHidden = true
         // Do any additional setup after loading the view.
     }
     
@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("VIEW WILL DISAPPEAR!")
+        self.navigationController?.isToolbarHidden = false
         finishEditingCells()
     }
     
