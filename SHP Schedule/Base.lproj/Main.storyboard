@@ -86,8 +86,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="bre-Rb-oxX" kind="show" identifier="dayToMonthSegue" id="U33-4y-dZt"/>
-                        <segue destination="9Fm-H8-OUJ" kind="show" identifier="dayToWeekSegue" id="tua-FM-E9J"/>
-                        <segue destination="2px-Rj-aIW" kind="show" identifier="dayToNavToWeekSegue" id="c0c-eC-OFG"/>
+                        <segue destination="2px-Rj-aIW" kind="presentation" identifier="dayToNavToWeekSegue" id="c0c-eC-OFG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xcd-p3-Efw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,17 +213,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="9Fm-H8-OUJ" kind="show" identifier="monthToWeekSegue" id="MHP-B9-YAJ"/>
+                        <segue destination="2px-Rj-aIW" kind="presentation" identifier="monthToNavToWeekSegue" id="5sG-W2-FFc"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73Z-Ww-zaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1643" y="473"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Week Navigation Controller-->
         <scene sceneID="Sw5-uH-FZ6">
             <objects>
-                <navigationController id="2px-Rj-aIW" sceneMemberID="viewController">
+                <navigationController id="2px-Rj-aIW" customClass="WeekNavigationController" customModule="SHP_Schedule" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w6c-5v-bMm">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -235,7 +234,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxK-GL-aE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2481" y="430"/>
+            <point key="canvasLocation" x="2614" y="473"/>
         </scene>
         <!--Week View-->
         <scene sceneID="3DO-Dw-kwF">
@@ -580,7 +579,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tua-FM-E9J"/>
+        <segue reference="5sG-W2-FFc"/>
         <segue reference="U33-4y-dZt"/>
     </inferredMetricsTieBreakers>
 </document>

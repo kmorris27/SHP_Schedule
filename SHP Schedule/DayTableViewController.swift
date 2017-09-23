@@ -105,7 +105,6 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         startTimer()
         addGestures()
         self.tableView.isScrollEnabled = false
-        print("Day View Loaded")
         
         self.dayForView = Date()
         
@@ -119,8 +118,6 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         spinner.center = self.tableView.center
         self.view.addSubview(spinner)
         spinner.bringSubview(toFront: self.view)
-        
-       // NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
     }
     
@@ -146,19 +143,19 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
     @objc override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         super.willTransition(to: newCollection, with: coordinator)
         let currentCollection = self.traitCollection
-        print("  D CURRENT h = \(currentCollection.horizontalSizeClass.rawValue) v = \(currentCollection.verticalSizeClass.rawValue)")
-        print("  D NEW h = \(newCollection.horizontalSizeClass.rawValue) v = \(newCollection.verticalSizeClass.rawValue)")
+        //print("  D CURRENT h = \(currentCollection.horizontalSizeClass.rawValue) v = \(currentCollection.verticalSizeClass.rawValue)")
+        //print("  D NEW h = \(newCollection.horizontalSizeClass.rawValue) v = \(newCollection.verticalSizeClass.rawValue)")
             if let navCon = self.navigationController {
                 if navCon.visibleViewController != self {
                     return
                 }
                     if currentCollection.horizontalSizeClass == .compact &&
                         currentCollection.verticalSizeClass == .regular && newCollection.verticalSizeClass == .compact {
-                        print("ROTATING TO PORTRAIT")
+                        //print("ROTATING TO PORTRAIT")
                         
                         if newCollection.horizontalSizeClass == .compact {
-                            self.performSegue(withIdentifier: "dayToWeekSegue", sender: self)
-                            print("DAY PUSH")
+                            self.performSegue(withIdentifier: "dayToNavToWeekSegue", sender: self)
+                            //print("DAY PUSH")
                         }
                     }
                 }
@@ -317,25 +314,15 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         dayForView = Date()
     }
     
-    
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
-        print("CHECKING...")
         if primaryViewController.contentViewController == self {
             if secondaryViewController.contentViewController is MonthCollectionViewController {
-                print("...TRUE")
                 return true
             }
         }
-        let currentCollection = self.traitCollection
-        if currentCollection.horizontalSizeClass == .compact || currentCollection.verticalSizeClass == .compact {
-            print("...TRUE")
-            return true
-        }
-        print("...FALSE")
         return false
     }
-    
-    
+ 
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -349,7 +336,7 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         } else if segue.identifier == "dayToMonthSegue"{
             let monthViewController = segue.destination.contentViewController as! MonthCollectionViewController
             monthViewController.monthForView = dayForView
-        } else if segue.identifier == "dayToWeekSegue" {
+        } else if segue.identifier == "dayToNavToWeekSegue"  {
             let weekViewController = segue.destination.contentViewController as! WeekCollectionViewController
             weekViewController.weekForView = dayForView
         }

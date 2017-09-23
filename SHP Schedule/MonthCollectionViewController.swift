@@ -142,18 +142,18 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
     @objc override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
         super.willTransition(to: newCollection, with: coordinator)
         let currentCollection = self.traitCollection
-        print("  M CURRENT h = \(currentCollection.horizontalSizeClass.rawValue) v = \(currentCollection.verticalSizeClass.rawValue)")
-        print("  M NEW h = \(newCollection.horizontalSizeClass.rawValue) v = \(newCollection.verticalSizeClass.rawValue)")
+        //print("  M CURRENT h = \(currentCollection.horizontalSizeClass.rawValue) v = \(currentCollection.verticalSizeClass.rawValue)")
+        //print("  M NEW h = \(newCollection.horizontalSizeClass.rawValue) v = \(newCollection.verticalSizeClass.rawValue)")
         if let navCon = self.navigationController {
             if navCon.visibleViewController != self {
                 return
             }
             if currentCollection.horizontalSizeClass == .compact &&
                 currentCollection.verticalSizeClass == .regular && newCollection.verticalSizeClass == .compact {
-                print("ROTATING TO PORTRAIT")
+                //print("ROTATING TO PORTRAIT")
                 if newCollection.horizontalSizeClass == .compact {
-                    self.performSegue(withIdentifier: "monthToWeekSegue", sender: self)
-                    print("MONTH PUSH AS USUAL")
+                    self.performSegue(withIdentifier: "monthToNavToWeekSegue", sender: self)
+                    //print("MONTH PUSH AS USUAL")
                 }
             }
         }
@@ -178,7 +178,7 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "monthToWeekSegue" {
+        if segue.identifier == "monthToNavToWeekSegue"{
             let weekViewController = segue.destination.contentViewController as! WeekCollectionViewController
             weekViewController.weekForView = monthForView
         }

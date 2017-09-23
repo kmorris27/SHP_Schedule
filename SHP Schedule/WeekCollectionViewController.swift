@@ -19,12 +19,6 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        
-        if self.navigationController != nil {
-            print("VDL WEEK IN NAV CONTROLLER")
-        } else {
-            print("VDL WEEK NOT IN NAV CONTROLLER")
-        }
          
         self.navigationItem.hidesBackButton = true
         self.navigationController?.isToolbarHidden = true
@@ -32,24 +26,6 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         
         updateUIForNewWeek()
         
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if self.navigationController != nil {
-            print("VWA WEEK IN NAV CONTROLLER")
-        } else {
-            print("VWA WEEK NOT IN NAV CONTROLLER")
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if self.navigationController != nil {
-            print("VDA WEEK IN NAV CONTROLLER")
-        } else {
-            print("VDA WEEK NOT IN NAV CONTROLLER")
-        }
     }
     
     func addGestures() {
@@ -103,28 +79,7 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         return .all
     }
     
-     @objc override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.willTransition(to: newCollection, with: coordinator)
-        let currentCollection = self.traitCollection
-        if let navCon = self.navigationController {
-            if navCon.visibleViewController != self {
-                return
-            }
-        }
-        if currentCollection.verticalSizeClass == .compact &&
-            newCollection.verticalSizeClass == .regular &&
-            newCollection.horizontalSizeClass == .compact {
-            print(" W ROTATING TO PORTRAIT")
-            self.navigationController?.isToolbarHidden = false
-            if let navCon = self.navigationController {
-                navCon.popViewController(animated: true)
-                print("POP!")
-            }
-            else {
-                print("NO NAV CONTROLLER")
-            }
-        }
-    }
+     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

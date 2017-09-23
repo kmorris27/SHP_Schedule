@@ -25,6 +25,7 @@
 		BE77CF4A1F1802B600A4A56F /* WeekCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77CF491F1802B600A4A56F /* WeekCollectionViewController.swift */; };
 		BE77CF4C1F1802F600A4A56F /* WeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77CF4B1F1802F600A4A56F /* WeekCollectionViewCell.swift */; };
 		BEB3BE431F0DFA220069BA82 /* PeriodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB3BE421F0DFA220069BA82 /* PeriodTableViewCell.swift */; };
+		BEC0CBBE1F76BD0900CF3D47 /* WeekNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC0CBBD1F76BD0900CF3D47 /* WeekNavigationController.swift */; };
 		BEF4976C1F042BF40037F239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF4976B1F042BF40037F239 /* AppDelegate.swift */; };
 		BEF497711F042BF40037F239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF4976F1F042BF40037F239 /* Main.storyboard */; };
 		BEF497731F042BF40037F239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF497721F042BF40037F239 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		BE77CF491F1802B600A4A56F /* WeekCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewController.swift; sourceTree = "<group>"; };
 		BE77CF4B1F1802F600A4A56F /* WeekCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekCollectionViewCell.swift; sourceTree = "<group>"; };
 		BEB3BE421F0DFA220069BA82 /* PeriodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodTableViewCell.swift; sourceTree = "<group>"; };
+		BEC0CBBD1F76BD0900CF3D47 /* WeekNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekNavigationController.swift; sourceTree = "<group>"; };
 		BEF497681F042BF40037F239 /* SHP Schedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHP Schedule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF4976B1F042BF40037F239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF497701F042BF40037F239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				6C81A7AE1F37D68A008C47AC /* SettingsViewController.swift */,
 				BE77CF4B1F1802F600A4A56F /* WeekCollectionViewCell.swift */,
 				BE77CF491F1802B600A4A56F /* WeekCollectionViewController.swift */,
+				BEC0CBBD1F76BD0900CF3D47 /* WeekNavigationController.swift */,
 				6C81A7B61F37FED7008C47AC /* Week Table View Cells */,
 				BEB3BE421F0DFA220069BA82 /* PeriodTableViewCell.swift */,
 				BE3D33591F18726300F6D943 /* UpdateTableViewCell.swift */,
@@ -345,6 +348,7 @@
 				6C81A7B11F37FE98008C47AC /* DateTableViewCell.swift in Sources */,
 				BEB3BE431F0DFA220069BA82 /* PeriodTableViewCell.swift in Sources */,
 				BE10EBAA1F0D7E99009C3326 /* DayTableViewController.swift in Sources */,
+				BEC0CBBE1F76BD0900CF3D47 /* WeekNavigationController.swift in Sources */,
 				BE15A1461F187306002E4D79 /* Extensions.swift in Sources */,
 				6C81A7B51F37FEC6008C47AC /* PeriodDetailTableViewCell.swift in Sources */,
 				6C81A7B31F37FEB6008C47AC /* ScheduleNameTableViewCell.swift in Sources */,
