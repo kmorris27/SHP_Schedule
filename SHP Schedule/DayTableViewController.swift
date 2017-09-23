@@ -27,21 +27,21 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
     }
     
     override var shouldAutorotate: Bool {
-       return true
+        return true
     }
     
     func addGestures() {
-
+        
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(DayTableViewController.rightSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         self.view.addGestureRecognizer(swipeRight)
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(DayTableViewController.leftSwipeGesture))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
-
+        
     }
-
-    func rightSwipeGesture() {
+    
+    @objc func rightSwipeGesture() {
         if Calendar.current.component(.weekday, from: dayForView!) == 2
         {
             dayForView = dayForView?.addingTimeInterval(TimeInterval(-oneDay*3))
@@ -52,10 +52,10 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         }
     }
     
-    func leftSwipeGesture() {
+    @objc func leftSwipeGesture() {
         dayForView = dayForView?.addingTimeInterval(TimeInterval(oneDay))
     }
- 
+    
     
     var dayForView:Date? {
         didSet {
@@ -71,16 +71,24 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
             
             self.title = dayForView?.toString(withFormat:"E, MMMM d")
             self.tableView.reloadData()
+            if (self.splitViewController?.isCollapsed == false)
+            {
+                if let navController = self.splitViewController?.viewControllers.last as? UINavigationController {
+                    if let monthViewController = navController.viewControllers.first as? MonthCollectionViewController {
+                        if monthViewController.dayShownInSplitView != dayForView {
+                            monthViewController.dayShownInSplitView = dayForView
+                        }
+                    }
+                }
+            }
         }
     }
     
-    func segmentedControlChanged(_ sender:UISegmentedControl) {
-        let monthCollectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "Month") as! MonthCollectionViewController
+    @objc func segmentedControlChanged(_ sender:UISegmentedControl) {
         sender.selectedSegmentIndex=0
-        monthCollectionViewController.monthForView = dayForView
-        self.navigationController?.pushViewController(monthCollectionViewController, animated: true)
+        
+        self.performSegue(withIdentifier: "dayToMonthSegue", sender: self)
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -112,7 +120,7 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         self.view.addSubview(spinner)
         spinner.bringSubview(toFront: self.view)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
+       // NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
     }
     
@@ -125,41 +133,41 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
     }
     
     func endScheduleDownload() {
-        self.tableView.reloadData()
-        spinner.stopAnimating()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.spinner.stopAnimating()
+        }
     }
     
     override  var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
-            return .all
+        return .all
     }
     
-    func deviceOrientationDidChange() {
-        let orientation = UIDevice.current.orientation
-        if orientation == .landscapeLeft || orientation == .landscapeRight {
-            let weekCollectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "Week") as! WeekCollectionViewController
-            weekCollectionViewController.weekForView = dayForView
+    @objc override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        let currentCollection = self.traitCollection
+        print("  D CURRENT h = \(currentCollection.horizontalSizeClass.rawValue) v = \(currentCollection.verticalSizeClass.rawValue)")
+        print("  D NEW h = \(newCollection.horizontalSizeClass.rawValue) v = \(newCollection.verticalSizeClass.rawValue)")
             if let navCon = self.navigationController {
-                if navCon.visibleViewController == self {
-                navCon.pushViewController(weekCollectionViewController, animated: true)
-                print("DAY PUSH")
+                if navCon.visibleViewController != self {
+                    return
                 }
-            }
-            
-        } else if orientation == .portrait
-        {
-            print("DAY = PORTRAIT")
-
-        } else if orientation == .portraitUpsideDown {
-            print("DAY = UPSIDE DOWN")
-
-        } else {
-        }
-        
+                    if currentCollection.horizontalSizeClass == .compact &&
+                        currentCollection.verticalSizeClass == .regular && newCollection.verticalSizeClass == .compact {
+                        print("ROTATING TO PORTRAIT")
+                        
+                        if newCollection.horizontalSizeClass == .compact {
+                            self.performSegue(withIdentifier: "dayToWeekSegue", sender: self)
+                            print("DAY PUSH")
+                        }
+                    }
+                }
     }
     
-    deinit {
+   /* deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
     }
+ */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -188,12 +196,12 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var result = scheduleArrayForDay?.count ?? 0
-
+        
         if (shouldHideBeginningZPeriod) {
             result -= 1
         }
         return result
-
+        
         
     }
     
@@ -249,7 +257,7 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
             if row > 0  // KMo added this
             {
                 if let tempDate = (scheduleArray?[row-1][2].toDate(withFormat: "hh:mm")) {
-                startComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: tempDate)
+                    startComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: tempDate)
                 }
             }
             let endComponents = calendar.dateComponents([Calendar.Component.hour, Calendar.Component.minute], from: (endTimeMil?.toDate(withFormat: "hh:mm"))!)
@@ -296,7 +304,7 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
         }
         else
         {
-        dayForView = dayForView?.addingTimeInterval(TimeInterval(-oneDay))
+            dayForView = dayForView?.addingTimeInterval(TimeInterval(-oneDay))
         }
     }
     
@@ -311,13 +319,22 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
     
     
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        print("CHECKING...")
         if primaryViewController.contentViewController == self {
             if secondaryViewController.contentViewController is MonthCollectionViewController {
+                print("...TRUE")
                 return true
             }
         }
+        let currentCollection = self.traitCollection
+        if currentCollection.horizontalSizeClass == .compact || currentCollection.verticalSizeClass == .compact {
+            print("...TRUE")
+            return true
+        }
+        print("...FALSE")
         return false
     }
+    
     
     // MARK: - Navigation
     
@@ -329,6 +346,12 @@ class DayTableViewController: UITableViewController,UISplitViewControllerDelegat
             let settingsViewController = segue.destination.contentViewController as! SettingsViewController
             settingsViewController.schoolSchedule = self.schoolSchedule
             settingsViewController.periods = ["A", "B", "C", "D", "E", "F", "G", "X", "Y", "Z"]
+        } else if segue.identifier == "dayToMonthSegue"{
+            let monthViewController = segue.destination.contentViewController as! MonthCollectionViewController
+            monthViewController.monthForView = dayForView
+        } else if segue.identifier == "dayToWeekSegue" {
+            let weekViewController = segue.destination.contentViewController as! WeekCollectionViewController
+            weekViewController.weekForView = dayForView
         }
         
     }

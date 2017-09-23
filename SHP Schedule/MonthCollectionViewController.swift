@@ -16,8 +16,34 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
     let spinner:UIActivityIndicatorView = UIActivityIndicatorView  (activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
     fileprivate let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     var smallestFont: CGFloat = 40
-    var monthForView:Date?
     
+    var monthForView:Date? {
+        didSet {
+            if oldValue == nil {
+                updateUIForNewMonth()
+            }
+            if (self.splitViewController?.isCollapsed == false)
+            {
+                if let navController = self.splitViewController?.viewControllers.first as? UINavigationController {
+                    if let dayViewController = navController.viewControllers.first as? DayTableViewController {
+                        let calendar = Calendar.current
+                        if calendar.component(.month, from: dayViewController.dayForView!) != calendar.component(.month, from: monthForView!)
+                        {
+                            dayViewController.dayForView = monthForView
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    var dayShownInSplitView:Date? {
+        didSet {
+            monthForView = dayShownInSplitView
+            updateUIForNewMonth()
+        }
+    }
     
     var offsetForFirstDayOfMonth:Int {
         get {
@@ -43,16 +69,16 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         
     }
     
-    func rightSwipeGesture() {
+    @objc func rightSwipeGesture() {
         monthForView = monthForView?.addingTimeInterval(TimeInterval(-oneDay))
         updateUIForNewMonth()
     }
     
-    func leftSwipeGesture() {
+    @objc func leftSwipeGesture() {
         monthForView = monthForView?.addingTimeInterval(TimeInterval(oneDay*31))
         updateUIForNewMonth()
     }
-
+    
     
     
     //MARK: - Methods
@@ -61,22 +87,22 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         self.title = monthForView?.toString(withFormat: "MMMM, YYYY")
         self.collectionView?.reloadData()
     }
-        
+    
     func resetToFirstDayOfMonth() {
         let calendar = Calendar.current
-        var components = calendar.dateComponents([Calendar.Component.day, Calendar.Component.hour], from: monthForView!)
-        if let offset = components.day {
-            monthForView = monthForView!.addingTimeInterval(TimeInterval(-oneDay*(offset-1)))
-            if let hours = components.hour {
-                
-                monthForView = monthForView!.addingTimeInterval(TimeInterval(-hours*60*60))
-                monthForView = monthForView!.addingTimeInterval(TimeInterval(12*60*60))
-
+        if let monForView = monthForView {
+            var components = calendar.dateComponents([Calendar.Component.day, Calendar.Component.hour], from: monForView)
+            if let offset = components.day {
+                monthForView = monthForView!.addingTimeInterval(TimeInterval(-oneDay*(offset-1)))
+                if let hours = components.hour {
+                    monthForView = monthForView!.addingTimeInterval(TimeInterval(-hours*60*60))
+                    monthForView = monthForView!.addingTimeInterval(TimeInterval(12*60*60))
+                }
             }
         }
     }
-
-    func segmentedControlChanged(_ sender:UISegmentedControl) {
+    
+    @objc func segmentedControlChanged(_ sender:UISegmentedControl) {
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -100,14 +126,12 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         segmentControl.tintColor = UIColor.schoolColor
         let segmentedControlButtonItem = UIBarButtonItem(customView: segmentControl)
         self.toolbarItems?.insert(segmentedControlButtonItem, at: 2)
-
+        
         spinner.center = self.collectionView?.center ?? self.view.center
         self.view.addSubview(spinner)
         spinner.bringSubview(toFront: self.view)
         
         updateUIForNewMonth()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
         
     }
     
@@ -115,27 +139,26 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         return .all
     }
     
-    func deviceOrientationDidChange() {
-        let orientation = UIDevice.current.orientation
-        if orientation == .landscapeLeft || orientation == .landscapeRight {
-            let weekCollectionViewController = self.storyboard?.instantiateViewController(withIdentifier: "Week") as! WeekCollectionViewController
-            weekCollectionViewController.weekForView = monthForView
-            if let navCon = self.navigationController {
-                navCon.pushViewController(weekCollectionViewController, animated: true)
-                print("MONTH PUSH")
+    @objc override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        let currentCollection = self.traitCollection
+        print("  M CURRENT h = \(currentCollection.horizontalSizeClass.rawValue) v = \(currentCollection.verticalSizeClass.rawValue)")
+        print("  M NEW h = \(newCollection.horizontalSizeClass.rawValue) v = \(newCollection.verticalSizeClass.rawValue)")
+        if let navCon = self.navigationController {
+            if navCon.visibleViewController != self {
+                return
             }
-            
-        } else if orientation == .portrait || orientation == .portraitUpsideDown {
-            // do nothing
-        } else {
+            if currentCollection.horizontalSizeClass == .compact &&
+                currentCollection.verticalSizeClass == .regular && newCollection.verticalSizeClass == .compact {
+                print("ROTATING TO PORTRAIT")
+                if newCollection.horizontalSizeClass == .compact {
+                    self.performSegue(withIdentifier: "monthToWeekSegue", sender: self)
+                    print("MONTH PUSH AS USUAL")
+                }
+            }
         }
-        
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-    }
-
     
     func startScheduleDownload() {
         spinner.startAnimating()
@@ -145,22 +168,22 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         self.collectionView?.reloadData()
         spinner.stopAnimating()
     }
-
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "monthToWeekSegue" {
+            let weekViewController = segue.destination.contentViewController as! WeekCollectionViewController
+            weekViewController.weekForView = monthForView
+        }
+        
+    }
     
     override func collectionView(_ collectionView: UICollectionView,
                                  viewForSupplementaryElementOfKind kind: String,
@@ -174,6 +197,9 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         default:
             assert(false, "Unexpected element kind")
         }
+        return collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                               withReuseIdentifier: "MTWTF",
+                                                               for: indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -185,8 +211,8 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         let totalHorizontalSpace = flowLayout.sectionInset.left
             + flowLayout.sectionInset.right
             + (flowLayout.minimumInteritemSpacing * CGFloat(numberOfItemsPerRow - 1))
-        let navBarHeight = (self.navigationController?.navigationBar.frame.height)!
-        let toolbarHeight = (self.navigationController?.toolbar.frame.height)!
+        let navBarHeight = (self.navigationController?.navigationBar.frame.height) ?? 0
+        let toolbarHeight = (self.navigationController?.toolbar.frame.height) ?? 0
         let headerHeight = flowLayout.headerReferenceSize.height
         let totalVerticalSpace = flowLayout.sectionInset.top
             + flowLayout.sectionInset.bottom
@@ -205,7 +231,7 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-
+        
         return 1
     }
     
@@ -215,20 +241,20 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
     }
     
     private func scheduleArray(for day:Date)-> [String]? {
-            let dayAsText = day.toDateString()
-            let dict = schoolSchedule.dayScheduleDictionary
-            if let scheduleArray = dict?[dayAsText] {
-               return scheduleArray
-                }
-            return nil
+        let dayAsText = day.toDateString()
+        let dict = schoolSchedule.dayScheduleDictionary
+        if let scheduleArray = dict?[dayAsText] {
+            return scheduleArray
+        }
+        return nil
     }
-
+    
     func dateFromIndexPath(_ indexPath:IndexPath) -> Date {
         let offset = offsetForFirstDayOfMonth
         let extraWeekendDays = (indexPath.row)/5*2
         let daysAhead = indexPath.row+extraWeekendDays+offset
         return monthForView?.addingTimeInterval(TimeInterval(oneDay*daysAhead)) ?? Date()
-
+        
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -243,7 +269,7 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = 1.0
         cell.numberLabel.font = cell.numberLabel.font.withSize(smallestFont)
-
+        
         if monthForView != nil
         {
             let month = String(calendar.component(.month, from: monthForView!))
@@ -261,7 +287,7 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
                 cell.layer.borderWidth = 3.0
             }
             let textColor:UIColor
-            let backgroundColor:UIColor
+            var backgroundColor:UIColor
             if (month != String(calendar.component(.month, from: dayForCellView)))
             { textColor = UIColor.darkGray }
             else
@@ -273,7 +299,13 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
             { backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)}
             else
             { backgroundColor = UIColor.white }
-
+            if dayShownInSplitView != nil
+            {
+                if dayShownInSplitView!.toDateString() == dayForCellView.toDateString()
+                {
+                    backgroundColor = UIColor.schoolColor
+                }
+            }
             cell.numberLabel.textColor = textColor
             cell.scheduleLabel.textColor = textColor
             cell.backgroundColor = backgroundColor
@@ -281,12 +313,23 @@ class MonthCollectionViewController: UICollectionViewController, UICollectionVie
         return cell
     }
     
-    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let rootViewController = self.navigationController?.viewControllers.first
         if let dayTableViewController = rootViewController as? DayTableViewController {
             dayTableViewController.dayForView = dateFromIndexPath(indexPath)
-            self.navigationController?.popViewController(animated: true)            
+            self.navigationController?.popViewController(animated: true)
+            
+        }
+        else {
+            
+            if let masterNavController = self.splitViewController?.viewControllers.first as? UINavigationController {
+                if let masterDayTableViewController = masterNavController.viewControllers.first as? DayTableViewController
+                {
+                    masterDayTableViewController.dayForView = dateFromIndexPath(indexPath)
+                }
+            }
+            
+            
         }
     }
     

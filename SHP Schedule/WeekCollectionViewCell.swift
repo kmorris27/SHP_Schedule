@@ -77,7 +77,8 @@ class WeekCollectionViewCell: UICollectionViewCell, UITableViewDelegate, UITable
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "scheduleNameCell") as! ScheduleNameTableViewCell
-            cell.scheduleNameLabel.text = scheduleForDay!
+            
+            cell.scheduleNameLabel.text = scheduleForDay ?? ""
             cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
             

@@ -9,24 +9,47 @@
 import UIKit
 
 class WeekCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-
+    
     var weekForView:Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.splitViewController?.preferredDisplayMode = .allVisible
         addGestures()
-       
+        
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         
-        NotificationCenter.default.addObserver(self, selector: #selector(deviceOrientationDidChange), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
-        
+        if self.navigationController != nil {
+            print("VDL WEEK IN NAV CONTROLLER")
+        } else {
+            print("VDL WEEK NOT IN NAV CONTROLLER")
+        }
+         
         self.navigationItem.hidesBackButton = true
         self.navigationController?.isToolbarHidden = true
+        self.navigationController?.isNavigationBarHidden = false
         
         updateUIForNewWeek()
-
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if self.navigationController != nil {
+            print("VWA WEEK IN NAV CONTROLLER")
+        } else {
+            print("VWA WEEK NOT IN NAV CONTROLLER")
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if self.navigationController != nil {
+            print("VDA WEEK IN NAV CONTROLLER")
+        } else {
+            print("VDA WEEK NOT IN NAV CONTROLLER")
+        }
     }
     
     func addGestures() {
@@ -40,68 +63,73 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         
     }
     
-    func swipeRightGesture () {
+    @objc func swipeRightGesture () {
         weekForView = weekForView?.addingTimeInterval(TimeInterval(-oneDay*7))
         updateUIForNewWeek()
     }
     
-    func swipeLeftGesture () {
+    @objc func swipeLeftGesture () {
         weekForView = weekForView?.addingTimeInterval(TimeInterval(oneDay*7))
         updateUIForNewWeek()
     }
     
     func updateUIForNewWeek() {
-
+        
         resetToFirstDayOfWeek()
         self.title = weekForView?.toString(withFormat: "MMMM, YYYY")
         self.collectionView?.reloadData()
     }
     
     func resetToFirstDayOfWeek() {
-    
+        
         let calendar = Calendar.current
-        var components = calendar.dateComponents([Calendar.Component.weekday, Calendar.Component.hour], from: weekForView!)
-        if let offset = components.weekday {
-            print("RESET \(offset)")
-
-            weekForView = weekForView!.addingTimeInterval(TimeInterval(-oneDay*(offset-2)))
-            if let hours = components.hour {
-                weekForView = weekForView!.addingTimeInterval(TimeInterval(-hours*60*60))
-                weekForView = weekForView!.addingTimeInterval(TimeInterval(12*60*60))
+        if weekForView != nil {
             
+            
+            var components = calendar.dateComponents([Calendar.Component.weekday, Calendar.Component.hour], from: weekForView!)
+            if let offset = components.weekday {
+                // print("RESET \(offset)")
+                
+                weekForView = weekForView!.addingTimeInterval(TimeInterval(-oneDay*(offset-2)))
+                if let hours = components.hour {
+                    weekForView = weekForView!.addingTimeInterval(TimeInterval(-hours*60*60))
+                    weekForView = weekForView!.addingTimeInterval(TimeInterval(12*60*60))
+                }
             }
         }
     }
-
+    
     override  var supportedInterfaceOrientations : UIInterfaceOrientationMask     {
         return .all
     }
     
-    func deviceOrientationDidChange() {
-        let orientation = UIDevice.current.orientation
-        if orientation == .landscapeLeft || orientation == .landscapeRight {
-            print("WEEK ROTATED = landscape")
-            
-        } else if orientation == .portrait || orientation == .portraitUpsideDown {
-            
-            print("WEEK ROTATED = portrait")
+     @objc override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.willTransition(to: newCollection, with: coordinator)
+        let currentCollection = self.traitCollection
+        if let navCon = self.navigationController {
+            if navCon.visibleViewController != self {
+                return
+            }
+        }
+        if currentCollection.verticalSizeClass == .compact &&
+            newCollection.verticalSizeClass == .regular &&
+            newCollection.horizontalSizeClass == .compact {
+            print(" W ROTATING TO PORTRAIT")
             self.navigationController?.isToolbarHidden = false
             if let navCon = self.navigationController {
                 navCon.popViewController(animated: true)
                 print("POP!")
             }
-        } else {
-            print("ROTATED = other")
+            else {
+                print("NO NAV CONTROLLER")
+            }
         }
-        
     }
-
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
     @IBAction func goForwardOneWeek(_ sender: UIBarButtonItem) {
         weekForView = weekForView?.addingTimeInterval(TimeInterval(oneDay*7))
@@ -113,17 +141,17 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         updateUIForNewWeek()
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using [segue destinationViewController].
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     // MARK: UICollectionViewDataSource
-
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -133,19 +161,19 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         
         return CGSize(width: width, height: height)
     }
-
+    
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-
-
+    
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
-
+    
     private let oneDay = 24*60*60
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeekCell", for: indexPath)
         let weekCell = cell as! WeekCollectionViewCell
@@ -156,7 +184,7 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         weekCell.tableView.rowHeight = collectionView.bounds.height/CGFloat(13)
         weekCell.tableView.isScrollEnabled = false;
         if let periodArray = weekCell.scheduleArrayForDay {
-        
+            
             if periodArray.count > 9 {
                 weekCell.tableView.rowHeight = collectionView.bounds.height/CGFloat(4+periodArray.count)
             }
@@ -168,36 +196,36 @@ class WeekCollectionViewController: UICollectionViewController, UICollectionView
         weekCell.tableView.reloadData()
         return weekCell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
     
-    }
-    */
-
+    // MARK: UICollectionViewDelegate
+    
+    /*
+     // Uncomment this method to specify if the specified item should be highlighted during tracking
+     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+     return true
+     }
+     */
+    
+    /*
+     // Uncomment this method to specify if the specified item should be selected
+     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+     return true
+     }
+     */
+    
+    /*
+     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
+     return false
+     }
+     
+     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+     return false
+     }
+     
+     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
+     
+     }
+     */
+    
 }
