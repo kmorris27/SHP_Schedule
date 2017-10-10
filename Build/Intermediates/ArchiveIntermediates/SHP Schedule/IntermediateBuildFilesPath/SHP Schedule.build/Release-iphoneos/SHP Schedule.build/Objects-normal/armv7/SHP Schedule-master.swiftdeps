@@ -1,0 +1,21 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "6f38aefa9932910a0bf489f1bde63ce5"
+build_time: [1506567046, 465478000]
+inputs:
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/UpdateTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/MonthCollectionViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/DayTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/SettingsViewController.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/RootSplitViewController.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/SchoolSchedule.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/WeekCollectionViewController.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/WeekCollectionViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/DateTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/PeriodTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/DayTableViewController.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/WeekNavigationController.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/Extensions.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/PeriodDetailTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/ScheduleNameTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/MonthCollectionViewController.swift": [9223372036, 854775807]

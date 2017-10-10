@@ -1,0 +1,9 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "4292dedd87aab7d784869b41c4a6197f"
+build_time: [1506567023, 776725000]
+inputs:
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/SchoolSchedule.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/Today's SHP Schedule/WidgetPeriodTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/Today's SHP Schedule/WidgetAllPeriodsTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/Today's SHP Schedule/TodayViewController.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/SHP Schedule/Extensions.swift": [9223372036, 854775807]

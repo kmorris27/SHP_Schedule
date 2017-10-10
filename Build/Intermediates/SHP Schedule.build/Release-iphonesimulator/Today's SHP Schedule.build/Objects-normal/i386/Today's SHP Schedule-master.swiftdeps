@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "4b0ebfc5f9c167862a5b13369857b49b"
+build_time: [1506363720, 599422000]
+inputs:
+  "/Users/kmorris/Developer/SHP Schedule/Today's SHP Schedule/WidgetPeriodTableViewCell.swift": [9223372036, 854775807]
+  "/Users/kmorris/Developer/SHP Schedule/Today's SHP Schedule/TodayViewController.swift": [9223372036, 854775807]

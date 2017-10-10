@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Today_s_SHP_Schedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="28" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNC-Kd-tFr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="widgetAllPeriods" id="QwH-da-kyh" customClass="WidgetAllPeriodsTableViewCell" customModule="Today_s_SHP_Schedule" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QwH-da-kyh" id="aR3-a1-rtX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="27.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi7-WO-qze">
+                                                    <rect key="frame" x="127" y="16" width="66.5" height="33.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pi7-WO-qze" firstAttribute="top" secondItem="aR3-a1-rtX" secondAttribute="top" constant="16" id="NQ9-ui-oaW"/>
+                                                <constraint firstItem="pi7-WO-qze" firstAttribute="centerX" secondItem="aR3-a1-rtX" secondAttribute="centerX" id="t1f-te-S7a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="allPeriodsLabel" destination="pi7-WO-qze" id="KDh-Q0-ZaY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="widgetOnePeriod" id="YGC-pJ-Iku" customClass="WidgetPeriodTableViewCell" customModule="Today_s_SHP_Schedule" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="320" height="28"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YGC-pJ-Iku" id="5lm-rV-jx2">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="27.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZI-hB-VKg">
+                                                    <rect key="frame" x="4" y="4" width="308" height="16"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adF-xB-bnS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="264" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys9-yN-mla">
+                                                            <rect key="frame" x="264" y="0.0" width="44" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="sZI-hB-VKg" secondAttribute="trailing" constant="8" id="Kgm-nn-EA7"/>
+                                            <constraint firstAttribute="bottom" secondItem="sZI-hB-VKg" secondAttribute="bottom" constant="8" id="NqB-pR-JQi"/>
+                                            <constraint firstItem="sZI-hB-VKg" firstAttribute="leading" secondItem="YGC-pJ-Iku" secondAttribute="leading" constant="4" id="rH9-zB-zJR"/>
+                                            <constraint firstItem="sZI-hB-VKg" firstAttribute="top" secondItem="YGC-pJ-Iku" secondAttribute="top" constant="4" id="us1-A4-P6w"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="periodLabel" destination="adF-xB-bnS" id="CZ9-YK-x1u"/>
+                                            <outlet property="timingLabel" destination="ys9-yN-mla" id="E8a-2A-1VK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="oNC-Kd-tFr" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="6Ef-7o-dhy"/>
+                            <constraint firstAttribute="trailing" secondItem="oNC-Kd-tFr" secondAttribute="trailing" id="Fnw-FX-bih"/>
+                            <constraint firstItem="oNC-Kd-tFr" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="NJN-lR-nMK"/>
+                            <constraint firstAttribute="bottom" secondItem="oNC-Kd-tFr" secondAttribute="bottom" id="ykI-2G-4vk"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="tableView" destination="oNC-Kd-tFr" id="oDh-Su-jnN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.600000000000001" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
