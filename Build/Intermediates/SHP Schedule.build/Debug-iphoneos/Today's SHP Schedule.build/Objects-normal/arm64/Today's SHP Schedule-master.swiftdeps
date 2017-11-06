@@ -1,6 +1,6 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
 options: "a1da43bd20879e9029a147b5c71162b8"
-build_time: [1507647631, 207643000]
+build_time: [1509942421, 727028000]
 inputs:
   "/Users/kmorris/Developer/SHP Schedule final/SHP Schedule/SchoolSchedule.swift": [1506540748, 0]
   "/Users/kmorris/Developer/SHP Schedule final/Today's SHP Schedule/WidgetPeriodTableViewCell.swift": [1506486082, 0]
